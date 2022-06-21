@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고양시 생태환경교육센터</title>
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../css/common.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+<body>
+  <!-- skip_nav -->
+  <div id="skip_nav">
+    <a href="#gnb">메뉴 바로가기</a>
+    <a href="#container">본문 바로가기</a>
+  </div>
+  <!-- //skip_nav -->
+  <div id="wrap">
+    <!-- header -->
+    <header class="header">
+      <script>
+        $(function(){ $('.header').load('../layout/header.html');});
+      </script>
+    </header>
+    <!-- // header -->
+    <!-- container -->
+    <div id="container" class="sub">
+      <div class="wrap_submenu">
+        <script>
+          $(function(){ $('.wrap_submenu').load('../layout/submenu.html');});
+        </script>
+      </div>
+      <h2 class="screen_out">참여마당</h2>
+      <section class="section_p_review">
+        <div class="section_inner">
+          <div class="wrap_subtit">
+            <h3>참여후기</h3>
+          </div>
+          <div class="area_write">
+            <div class="cont_write">
+              <div class="head_write">
+                <label for="reviewTit" class="tit_label">제목</label>
+                <span class="box_input"><input type="text" id ="reviewTit" class="input"></span>
+              </div>
+              <div class="body_write">
+                <label for="reviewCont" class="tit_label">내용</label>
+                <span class="box_input"><textarea name="" id="reviewCont" class="textarea"></textarea></span>
+              </div>
+              <div class="attach_write">
+                <label for="attachFile" class="tit_label">썸네일</label>
+                <span class="box_input">
+                  <input type="text" id ="" class="input" disabled> <!-- 파일명 노출되는 영역 -->
+                  <span class="btn_attach">찾기<input type="file" id ="attachFile" class="input_file"></span>
+                </span>
+              </div>
+            </div>
+            <div class="wrap_link">
+              <a href="#none" class="link_list">목록</a>
+              <a href="#none" class="link_submit">등록하기</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- // container -->
+    <!-- footer -->
+    <footer class="footer">
+      <script>
+        $(function(){ $('.footer').load('../layout/footer.html'); });
+      </script>
+    </footer>
+    <!-- // footer -->
+  </div>
+</body>
+</html>

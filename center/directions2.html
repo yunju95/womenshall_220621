@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고양시 생태환경교육센터</title>
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../css/common.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+<body>
+  <!-- skip_nav -->
+  <div id="skip_nav">
+    <a href="#gnb">메뉴 바로가기</a>
+    <a href="#container">본문 바로가기</a>
+  </div>
+  <!-- //skip_nav -->
+  <div id="wrap">
+    <!-- header -->
+    <header class="header">
+      <script>
+        $(function(){ $('.header').load('../layout/header.html');});
+      </script>
+    </header>
+    <!-- // header -->
+    <!-- container -->
+    <div id="container" class="sub">
+      <div class="wrap_submenu">
+        <script>
+          $(function(){ $('.wrap_submenu').load('../layout/submenu.html');});
+        </script>
+      </div>
+      <h2 class="screen_out">호수자연학습센터</h2>
+      <section class="section_directions">
+        <div class="section_inner">
+          <div class="wrap_subtit">
+            <h3>오시는 길</h3>
+          </div>
+          <div class="area_map">
+            <div class="wrap_tab" role="tablist">
+              <a href="#none" class="link_tab" aria-selected="false">고양생태교육센터</a>
+              <a href="#none" class="link_tab" aria-selected="true">호수자연학습센터</a> <!-- 활성화시 aria-selected=true / 기본 false -->
+            </div>
+            <div id="map" style="background-color: #efefef">
+              <!-- 지도 스크립트 들어가는 영역 / 코드 삽입 후 배경값 삭제 -->
+            </div>
+            <div class="txt_map">
+              <strong>주소</strong>
+              <p>경기도 고양시 일산동구 호수로731(장항동)</p>
+            </div>
+          </div>
+          <div class="area_tbl">
+            <div class="wrap_contit">
+              <strong>교통안내</strong>
+            </div>
+            <div class="cont_tbl">
+              <div class="tbl_outer">
+                <table class="tbl tl">
+                  <colgroup>
+                    <col>
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="col1">버스</th>
+                      <td>33, 33-1, 88A, 92, 92-1, 922, 7300 일산노인종합복지관(20140)- 도보 2분</td>
+                    </tr>
+                    <tr>
+                      <th class="col1">지하철</th>
+                      <td>3호선 주엽역 2번, 3번출구 일산호구공원 이동- 도보 10분</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="area_tbl">
+            <div class="wrap_contit">
+              <strong>주차장 이용 안내</strong>
+            </div>
+            <div class="cont_tbl">
+              <div class="tbl_outer">
+                <table class="tbl tl">
+                  <colgroup>
+                    <col>
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="col1">지상주차장</th>
+                      <td>일산호수공원 제1주차장 이용</td>
+                    </tr>
+                    <tr>
+                      <th class="col1">주차요금</th>
+                      <td>유료</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- // container -->
+    <!-- footer -->
+    <footer class="footer">
+      <script>
+        $(function(){ $('.footer').load('../layout/footer.html'); });
+      </script>
+    </footer>
+    <!-- // footer -->
+  </div>
+</body>
+</html>
