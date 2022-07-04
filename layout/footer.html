@@ -1,50 +1,67 @@
+<div class="wrap_main_submenu">
+  <div class="inner_menu">
+    <div class="menu_cate menu_cate1"> <!-- menu_cate1 활성화 시 on 클래스 추가 -->
+      <strong class="tit_menu">시군구 여성회관</strong>
+      <ul class="list_menu">
+        <li><a href="#none" class="link_menu" target="_blank">경기도 북부 여성비전센터</a></li>
+        <li><a href="#none" class="link_menu" target="_blank">경기도 여성비전센터</a></li>
+        <li><a href="#none" class="link_menu" target="_blank">김포시평생학습센터여성회관</a></li>
+        <li><a href="#none" class="link_menu" target="_blank">부천시여성회관</a></li>
+        <li><a href="#none" class="link_menu" target="_blank">성남시 여성문화회관</a></li>
+        <li><a href="#none" class="link_menu" target="_blank">성남시 여성복지회관</a></li>
+        <li><a href="#none" class="link_menu" target="_blank">시흥시 여성비전센터</a></li>
+        <li><a href="#none" class="link_menu" target="_blank">안산시 여성회관</a></li>
+        <li><a href="#none" class="link_menu" target="_blank">안성시 여성회관</a></li>
+        <li><a href="#none" class="link_menu" target="_blank">용인시 여성회관</a></li>
+      </ul>
+    </div>
+    <div class="menu_cate menu_cate2"> <!-- menu_cate2 활성화 시 on 클래스 추가 -->
+      <strong class="tit_menu">취업 창업 관련 기관</strong>
+      <ul class="list_menu">
+        <li><a href="#none" class="link_menu" target="_blank">111</a></li>
+        <li><a href="#none" class="link_menu" target="_blank">222</a></li>
+        <li><a href="#none" class="link_menu" target="_blank">333</a></li>
+      </ul>
+    </div>
+    <div class="menu_cate menu_cate3"> <!-- menu_cate3 활성화 시 on 클래스 추가 -->
+      <strong class="tit_menu">고양시청 및 구청 홈페이지</strong>
+      <ul class="list_menu">
+        <li><a href="#none" class="link_menu" target="_blank">111</a></li>
+        <li><a href="#none" class="link_menu" target="_blank">222</a></li>
+        <li><a href="#none" class="link_menu" target="_blank">333</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 <div class="footer_inner">
   <div class="top_footermenu">
     <span class="screen_out">푸터 빠른메뉴</span>
     <ul class="list_menu">
       <li><a href="#none" class="link_menu">개인정보처리방침</a></li>
       <li><a href="#none" class="link_menu">저작권침해</a></li>
-      <li><a href="#none" class="link_menu">이메일주소무단수집거부</a></li>
+      <li><a href="#none" class="link_menu">이메일주소무단수집거부</a></li><br class="type_mo">
       <li><a href="#none" class="link_menu">웹접근성정책</a></li>
       <li><a href="#none" class="link_menu">뷰어 다운로드</a></li>
       <li><a href="#none" class="link_menu">찾아오시는길</a></li>
     </ul>
   </div>
-  <span class="screen_out">기관정보</span>
-  <ul class="list_footer">
-    <li>
-      <strong>고양생태교육센터</strong>
-      <span>경기도 고양시 일산서구 대학로 315</span><br class="type_mo"><span>전화 031-924-7341</span><span>팩스 031-924-7344</span>
-    </li>
-    <li>
-      <strong>호수자연학습센터</strong>
-      <span>경기도 고양시 일산동구 호수로 731</span><br class="type_mo"><span>전화 031-923-3356</span>
-    </li>
-    <li>
-      <span>민원콜센터(시청) 031-909-9000</span><br class="type_mo"><span>수화상담(경기도) 070-7947-3939</span>
-    </li>
-  </ul>
-  <p class="copyright">Copyright 2022 GOYANGCITY. All rights reserved.</p>
-  <div class="wrap_sitemenu"> <!-- sitemenu 활성화 시 on 클래스 추가 -->
-    <strong class="tit_menu">FAMILY SITE</strong>
-    <ul class="list_sitemenu">
-      <li><a href="http://cafe.daum.net/Gyrivernetwork/" class="link_site" target="_blank">고양누리길</a></li>
-      <li><a href="http://cafe.daum.net/hosuecoshcool" class="link_site" target="_blank">경기도고양교육지원청</a></li>
-      <li><a href="http://www.nibr.go.kr/main/main.jsp" class="link_site" target="_blank">국립생활지원관</a></li>
-      <li><a href="http://www.kengy.go.kr" class="link_site" target="_blank">호수자연생태학교</a></li>
-      <li><a href="http://nuri.goyang.go.kr" class="link_site" target="_blank">하천네트워크</a></li>
-    </ul>
+  <div class="footer_info">
+    <span class="screen_out">기관정보</span>
+    <span>(우)10528 경기도 고양시 덕양구 용현로 48</span><span>TEL : 고양시 민원 콜센터 031-909-9000</span><span>FAX : 031-938-4307</span>
+    <p class="copyright">Copyrightⓒ GOYANG CITY. All Rights Reserved.</p>
   </div>
 </div>
 
 <!-- 푸터관련 공통 script : 헤더를 jquery로 끌어오면 js 파일이 안먹어서 푸터 밑에 작성 -->
 <script>
 $(function(){
-  $('.footer .wrap_sitemenu').click(function(){
-    if($(this).hasClass('on')){
-      $(this).removeClass('on');
+  $('.wrap_main_submenu .tit_menu').click(function(){
+    if($(this).parent().hasClass('on')){
+      $(this).parent().removeClass('on');
+      $(this).parent().find('.list_menu').stop().slideUp(250);
     }else{
-      $(this).addClass('on');
+      $(this).parent().addClass('on');
+      $(this).parent().find('.list_menu').stop().slideDown(250);
     }
   });
 });
