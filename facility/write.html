@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고양시 여성회관</title>
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../css/common.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+<body>
+  <!-- skip_nav -->
+  <div id="skip_nav">
+    <a href="#gnb">메뉴 바로가기</a>
+    <a href="#container">본문 바로가기</a>
+  </div>
+  <!-- //skip_nav -->
+  <div id="wrap">
+    <!-- header -->
+    <header class="header">
+      <script>
+        $(function(){ $('.header').load('../layout/header.html');});
+      </script>
+    </header>
+    <!-- // header -->
+    <!-- container -->
+    <div id="container" class="sub">
+      <div class="wrap_submenu">
+        <script>
+          $(function(){ $('.wrap_submenu').load('../layout/submenu.html');});
+        </script>
+      </div>
+      <h2 class="screen_out">고양시 여성회관</h2>
+      <section class="section_hall">
+        <div class="section_inner">
+          <div class="wrap_subtit">
+            <h3>대강당 일정 및 신청</h3>
+          </div>
+          <!-- 신청 default -->
+          <div class="area_input">
+            <div class="cont_input">
+                <!-- 신청자 성명 (단체) -->
+                <div class="module_input">
+                    <label for="ip1" class="label">신청자 성명 (단체)</label>
+                    <div class="wrap_input">
+                        <span class="box_input box_wide"><input type="text" id="ip1" class="input" value=""></span>
+                    </div>
+                </div>
+                <!-- 신청자 생년월일 (사업자번호) -->
+                <div class="module_input">
+                    <label for="ip2" class="label">신청자 생년월일 (사업자번호)</label>
+                    <div class="wrap_input">
+                        <span class="box_input box_wide"><input type="text" id="ip2" class="input" value=""></span> 
+                    </div>
+                </div>
+                <!-- 신청자 연락처 -->
+                <div class="module_input">
+                    <label for="ip4" class="label">신청자 연락처</label>
+                    <div class="wrap_input input_tel"> <!-- 연락처 Input wrapper일 경우 input_tel 클래스 추가 --> 
+                        <span class="box_input type_select select_tel"> <!-- 셀렉트박스를 감싸고 있을 경우 type_select 클래스 추가, 번호 셀렉트 박스일경우 select_tel 클래스 추가 -->
+                            <select name="localTel" id="ip4" class="select">
+                                <option value="선택" selected>선택</option>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                            </select>
+                        </span>
+                        <span class="box_txt">-</span>
+                        <span class="box_input"><input type="text" id="ip4-2" class="input"></span>
+                        <span class="box_txt">-</span>
+                        <span class="box_input"><input type="text" id="ip4-3" class="input"></span>
+                    </div>
+                </div>
+                <!-- 사용목적 행사내용 -->
+                <div class="module_input">
+                    <label for="ip5" class="label">사용목적 행사내용</label>
+                    <div class="wrap_input">
+                        <span class="box_input box_wide"><input type="text" id="ip5" class="input" value=""></span> 
+                    </div>
+                </div>
+                <!-- 사용인원 -->
+                <div class="module_input">
+                    <label for="ip6" class="label">사용인원</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip6" class="input" value=""></span> 
+                    </div>
+                </div>
+                <!-- 사용일자 -->
+                <div class="module_input">
+                    <label for="ip7" class="label">사용일자</label>
+                    <div class="wrap_input">
+                        <span class="box_input">
+                            <input type="date" id="ip7" class="input" value="">
+                        </span> 
+                    </div>
+                </div>
+                <!-- 사용시간 -->
+                <div class="module_input">
+                    <label for="ip8" class="label">사용시간</label>
+                    <div class="wrap_input input_time"> <!-- 사용시간 Input wrapper일 경우 input_time 클래스 추가 --> 
+                        <span class="box_input type_select select_time"> <!-- 셀렉트박스를 감싸고 있을 경우 type_select 클래스 추가, 시간 셀렉트 박스일경우 select_time 클래스 추가 -->
+                            <select name="localTel" id="ip8" class="select">
+                                <option value="선택" selected>시간선택</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                            </select>
+                        </span>
+                        <span class="box_input type_select select_time">
+                            <select name="localTel" id="ip8-1" class="select">
+                                <option value="선택" selected>분선택</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </span>
+                        <span class="box_txt">~</span>
+                        <span class="box_input type_select select_time"> <!-- 셀렉트박스를 감싸고 있을 경우 type_select 클래스 추가, 시간 셀렉트 박스일경우 select_time 클래스 추가 -->
+                            <select name="localTel" id="ip8-2" class="select">
+                                <option value="선택" selected>시간선택</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                            </select>
+                        </span>
+                        <span class="box_input type_select select_time">
+                            <select name="localTel" id="ip8-3" class="select">
+                                <option value="선택" selected>분선택</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </span>
+                        <span class="box_txt txt_notice">오후 대관은 13시 이후부터 가능</span>
+                    </div>
+                </div>
+                <!-- 사용할 부대시설 -->
+                <div class="module_input input_equipment">
+                    <label for="ip8" class="label">사용할 부대시설</label>
+                    <div class="desc_radio">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="equip01" name="equip01" class="radio">
+                                <label for="equip01" class="label"><span class="ico_radio"></span>냉난방</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="equip02" name="equip02" class="radio">
+                                <label for="equip02" class="label"><span class="ico_radio"></span>피아노</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="equip03" name="equip03" class="radio">
+                                <label for="equip03" class="label"><span class="ico_radio"></span>비디오프로젝트</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="equip04" name="equip04" class="radio">
+                                <label for="equip04" class="label"><span class="ico_radio"></span>조명</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="equip05" name="equip05" class="radio">
+                                <label for="equip05" class="label"><span class="ico_radio"></span>마이크</label>
+                                <span class="box_txt">(</span>
+                                <div class="box_input box_xsmall"><input type="text" id="equip05_ip9" class="input" value=""></div>
+                                <span class="box_txt">개)</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="equip06" name="equip06" class="radio">
+                                <label for="equip06" class="label"><span class="ico_radio"></span>현수막게첩</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 첨부파일 -->
+            <div class="cont_input type_attach"> <!-- 첨부 작성일 경우 type_attach 클래스 추가 -->
+                <div class="module_input"> 
+                    <label for="ip9" class="label">사용허가 신청서</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip9" class="input"></span>
+                        <span class="btn_attach">찾기<input type="file" class="input_file"></span>
+                    </div>
+                </div>
+                <div class="module_input"> 
+                    <label for="ip10" class="label">행사계획서</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip10" class="input"></span>
+                        <span class="btn_attach">찾기<input type="file" class="input_file"></span>
+                    </div>
+                </div>
+                <div class="module_input"> 
+                    <label for="ip11" class="label">관람료정산서</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip11" class="input"></span>
+                        <span class="btn_attach">찾기<input type="file" class="input_file"></span>
+                    </div>
+                </div>
+                <div class="module_input"> 
+                    <label for="ip12" class="label">방역관리 확인서</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip12" class="input"></span>
+                        <span class="btn_attach">찾기<input type="file" class="input_file"></span>
+                    </div>
+                </div>
+                <div class="module_input"> 
+                    <label for="ip13" class="label">사업자등록증</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip13" class="input"></span>
+                        <span class="btn_attach">찾기<input type="file" class="input_file"></span>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="area_bdlist">
+            <div class="wrap_contit">
+                <strong>첨부서류 서식 다운로드</strong>
+            </div>
+            <div class="cont_bdlist type_bdtg"> <!-- border-top이 얇은 회색선일 경우 type_bdtg 클래스 추가 -->
+                <ul class="list_doc">
+                    <li>
+                        <a href="#none" class="link_doc"><span class="ico_hwp">한글문서</span></a>
+                        <a href="#none" class="link_doc"><span class="ico_excel">엑셀문서</span></a>
+                        <strong class="tit_doc">사용허가 신청서</strong>
+                    </li>
+                    <li>
+                        <a href="#none" class="link_doc"><span class="ico_hwp">한글문서</span></a>
+                        <a href="#none" class="link_doc"><span class="ico_excel">엑셀문서</span></a>
+                        <strong class="tit_doc">행사계획서</strong>
+                    </li>
+                    <li>
+                        <a href="#none" class="link_doc"><span class="ico_hwp">한글문서</span></a>
+                        <a href="#none" class="link_doc"><span class="ico_excel">엑셀문서</span></a>
+                        <strong class="tit_doc">관람료정산서</strong>
+                    </li>
+                    <li>
+                        <a href="#none" class="link_doc"><span class="ico_hwp">한글문서</span></a>
+                        <a href="#none" class="link_doc"><span class="ico_excel">엑셀문서</span></a>
+                        <strong class="tit_doc">방역관리 확인서</strong>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          <div class="area_tbl">
+            <div class="wrap_contit">
+                <strong>준수사항</strong>
+            </div>
+            <div class="cont_bdlist type_bdtg"> <!-- border-top이 얇은 회색선일 경우 type_bdtg 클래스 추가 -->
+                <ul>
+                    <li class="has_bullet">여성회관에서 규정한 의무를 성실히 준수하여야 하며, 이에 대한 이의를 제기하지 못 한다.</li>
+                    <li class="has_bullet">대관 종료 전 종량제 쓰레기봉투를 준비하여 마무리 정리를 한 후 퇴청한다.</li>
+                    <li class="has_bullet">행사 주최자(3대이하) 외 주차 불가하니 대강당 이용자에 사전 안내하여 불편이 없도록 한다.</li>
+                </ul>
+            </div>
+            <div class="desc_radio">
+                <p>상기와 같이 준수사항에 대하여 동의하십니까?</p>
+                <ul>
+                  <li>
+                    <input type="radio" id="provisionY" name="provision" class="radio" checked><label for="provisionY" class="label"><span class="ico_radio"></span>예</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="provisionN" name="provision" class="radio"><label for="provisionN" class="label"><span class="ico_radio"></span>아니오</label>
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <div class="area_bdlist">
+            <strong class="screen_out">서약</strong>
+            <div class="cont_bdlist type_bdtg has_input"> <!-- border-top이 얇은 회색선일 경우 type_bdtg 클래스 추가 --> <!-- input박스(서명란)이 있을 경우 has_input 클래스 추가 -->
+              <ul>
+                <li>본인은 위 내용을 준수할 것을 약속하며 이행치 않을 경우에는 규정에 따를 것을 서약합니다. </li>
+              </ul>
+              <div class="wrap_input">
+                <label for="ip14" class="label">신청인</label>
+                <span class="box_input"><input type="text" id="ip14" class="input" value=""></span>
+              </div>
+            </div>
+            <div class="wrap_link">
+              <a href="#none" class="link_submit">확인</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- // container -->
+    <!-- footer -->
+    <footer class="footer">
+      <script>
+        $(function(){ $('.footer').load('../layout/footer.html'); });
+      </script>
+    </footer>
+    <!-- // footer -->
+  </div>
+</body>
+</html>
