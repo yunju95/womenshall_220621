@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고양시 여성회관</title>
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../css/common.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+<body>
+  <!-- skip_nav -->
+  <div id="skip_nav">
+    <a href="#gnb">메뉴 바로가기</a>
+    <a href="#container">본문 바로가기</a>
+  </div>
+  <!-- //skip_nav -->
+  <div id="wrap">
+    <!-- header -->
+    <header class="header">
+      <script>
+        $(function(){ $('.header').load('../layout/header.html');});
+      </script>
+    </header>
+    <!-- // header -->
+    <!-- container -->
+    <div id="container" class="sub">
+      <div class="wrap_submenu">
+        <script>
+          $(function(){ $('.wrap_submenu').load('../layout/submenu.html');});
+        </script>
+      </div>
+      <h2 class="screen_out">고양시 여성회관</h2>
+      <section class="section_mypage">
+        <div class="section_inner">
+          <div class="wrap_subtit">
+            <h3>출석부 관리</h3>
+          </div>
+          <div class="cont_search type_multiple"> <!-- 셀렉박스가 여러개일 경우 type_multiple 클래스 추가 -->
+            <span class="select_box">
+              <select class="select">
+                <option value="기수선택" selected="">기수선택</option>
+                <option value="68기">68기</option>
+                <option value="68기">68기</option>
+              </select>
+            </span>
+            <span class="select_box">
+              <select class="select">
+                <option value="기수선택" selected="">강좌선택</option>
+                <option value="11">11</option>
+                <option value="22">22</option>
+              </select>
+            </span>
+            <span class="select_box select_month"> <!-- 월선택 셀렉박스에 selec_month 클래스 추가 -->
+              <select class="select">
+                <option value="월선택" selected="">월선택</option>
+                <option value="1월">1월</option>
+                <option value="2월">2월</option>
+                <option value="3월">3월</option>
+                <option value="4월">4월</option>
+                <option value="5월">5월</option>
+                <option value="6월">6월</option>
+                <option value="7월">7월</option>
+                <option value="8월">8월</option>
+                <option value="9월">9월</option>
+                <option value="10월">10월</option>
+                <option value="11월">11월</option>
+                <option value="12월">12월</option>
+              </select>
+            </span>
+            <button type="submit" class="btn_search">검색</button>
+          </div>
+          <div class="cont_calendar" style="background-color: #eee;">개발영역</div><!-- 개발후 배경색 제거 -->
+          <div class="area_attendance">
+            <div class="cont_tbl" style="position: static;">
+              <div class="tbl_outer">
+                <table class="tbl">
+                  <colgroup>
+                    <col width="12%">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td class="tl" style="border-right: none;">홍길동1</td>
+                      <td class="tl" style="border-left: none;">
+                        <span class="select_box">
+                          <select class="select">
+                            <option value="미출석" selected="">미출석</option>
+                            <option value="출석">출석</option>
+                          </select>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tl" style="border-right: none;">홍길동2</td>
+                      <td class="tl" style="border-left: none;">
+                        <span class="select_box">
+                          <select class="select">
+                            <option value="미출석" >미출석</option>
+                            <option value="출석" selected="">출석</option>
+                          </select>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tl" style="border-right: none;">홍길동3</td>
+                      <td class="tl" style="border-left: none;">
+                        <span class="select_box">
+                          <select class="select">
+                            <option value="미출석" >미출석</option>
+                            <option value="출석" selected="">출석</option>
+                          </select>
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- // container -->
+    <!-- footer -->
+    <footer class="footer">
+      <script>
+        $(function(){ $('.footer').load('../layout/footer.html'); });
+      </script>
+    </footer>
+    <!-- // footer -->
+  </div>
+</body>
+</html>

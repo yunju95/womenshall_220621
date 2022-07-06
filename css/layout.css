@@ -173,7 +173,7 @@
   .wrap_submenu .list_menu .on .link_menu{color:#e34e64}
 
   /* footer submenu */
-  .wrap_main_submenu {height: auto;}
+  .wrap_main_submenu {height: auto;border-top: none;}
   .wrap_main_submenu .inner_menu {display: block;}
   .wrap_main_submenu .menu_cate {width: 100%;}
   .wrap_main_submenu .menu_cate1::before {display: none;}
