@@ -29,5 +29,14 @@ $(function(){
       $(this).parent().find('.list_menu').stop().slideDown(250);
     }
   });
+
+  $(window).on('load resize', function(){
+    if($(this).innerWidth() > 1024){
+      $('.menu_depth2').removeClass('on');
+      $('.menu_depth2 .list_menu').show();
+    }else{
+      $('.menu_depth2 .list_menu').hide();
+    }
+  });
 });
 </script>
