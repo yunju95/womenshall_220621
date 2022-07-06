@@ -76,15 +76,6 @@
 .wrap_submenu{position:relative;height: 428px;background: url(../img/sub/sub_visual.png) no-repeat 0 0;background-size: cover;}
 .wrap_submenu:before{position:absolute;left:0;top:0;right:0;bottom:0;background-color:rgba(0,0,0,0.2);content:''}
 .wrap_submenu .inner_menu{position: relative;max-width: 1200px;height:100%;margin:0 auto;}
-/* .wrap_submenu .link_home{display:flex;align-items: center;justify-content: center;height:60px;width:18px;}
-.wrap_submenu .link_home .ico_home{width: 18px;height: 18px;color:transparent;background: url(../img/common/ico_home.png) no-repeat 0 0;background-size: cover;}
-.wrap_submenu .btn_print{display:flex;align-items: center;justify-content: center;height:60px;width:60px;
-margin-left: auto;border-left: 1px solid #e2e2e2;}
-.wrap_submenu .btn_print .ico_print{width: 21px;height: 21px;color:transparent;background: url(../img/common/ico_print.png) no-repeat 0 0;background-size: cover;} */
-
-/* .wrap_submenu div[class^='menu_depth']{position: relative;z-index: 10;} */
-/* .wrap_submenu div[class^='menu_depth']::before{position:absolute;top:21px;left:0;width:1px;height:17px;background-color:#e2e2e2;content:''} */
-/* .wrap_submenu div[class^='menu_depth'] .tit_menu{display: block;position: relative;font-size: 15px;line-height:59px;font-weight: normal;} */
 .wrap_submenu .menu_depth1{position:absolute;top:50%;left:0;width:100%;margin-top:-33px;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
 .wrap_submenu .menu_depth1 .tit_menu{display:block;font-size:54px;color:#fff;text-align:center}
 .wrap_submenu .menu_depth2{position:absolute;bottom:0;left:0;right:0;height:67px;background-color:#e34e64;text-align:center;}
@@ -93,13 +84,6 @@ margin-left: auto;border-left: 1px solid #e2e2e2;}
 .wrap_submenu .list_menu li{display:inline-block;vertical-align:top}
 .wrap_submenu .list_menu .link_menu{display:block;padding:0 20px;font-size:18px;line-height:67px;color:#fff}
 .wrap_submenu .list_menu .on .link_menu{font-weight:bold}
-/* .wrap_submenu .menu_depth2 .tit_menu{font-weight:500;color:#e34e64;cursor: pointer;}
-.wrap_submenu .menu_depth2 .tit_menu::after{position: absolute;top: 50%;right: 17px;width: 20px;height: 20px;margin-top: -10px;background: url(../img/common/ico_submenu_arr.png) no-repeat;background-size: 100%;content: '';}
-.wrap_submenu .menu_depth2.on .tit_menu::after{transform: rotate(180deg);} */
-/* .wrap_submenu div[class^='menu_depth'] .list_menu{display: none;position: absolute;left: -1px;right: -1px;top: 100%;padding:13px 21px;border: 1px solid #e2e2e2;background-color: #fff;} */
-/* .wrap_submenu div[class^='menu_depth'].on .list_menu{display: block;} */
-/* .wrap_submenu div[class^='menu_depth'] .list_menu .link_menu{display: block;padding: 10px 0;font-size: 15px;line-height: 15px;font-weight: 500;}
-.wrap_submenu div[class^='menu_depth'] .list_menu li:hover .link_menu{color:#74c500} */
 
 
 /* footer submenu */
@@ -183,7 +167,7 @@ margin-left: auto;border-left: 1px solid #e2e2e2;}
   .wrap_submenu .menu_depth2 .tit_menu{display:block;position:relative;height:50px;padding:0 15px;font-size:14px;line-height:50px;color:#e34e64;font-weight:bold;border-bottom: 1px solid #e2e2e2;-webkit-box-sizing:border-box;box-sizing:border-box}
   .wrap_submenu .menu_depth2 .tit_menu::after{position: absolute;top: 50%;right: 17px;width: 20px;height: 20px;margin-top: -10px;background: url(../img/common/ico_submenu_arr.png) no-repeat;background-size: 100%;content: '';}
   .wrap_submenu .menu_depth2.on .tit_menu::after{transform: rotate(180deg);}
-  .wrap_submenu .list_menu{position:absolute;top:100%;left:0;width:100%;padding:14px 0;background-color:#fff;border-bottom: 1px solid #e2e2e2;}
+  .wrap_submenu .list_menu{display:none;position:absolute;top:100%;left:0;width:100%;padding:14px 0;background-color:#fff;border-bottom: 1px solid #e2e2e2;}
   .wrap_submenu .list_menu li{display:block}
   .wrap_submenu .list_menu .link_menu{padding:0 15px;font-size:14px;line-height:34px;color:#333;-webkit-box-sizing:border-box;box-sizing:border-box}
   .wrap_submenu .list_menu .on .link_menu{color:#e34e64}

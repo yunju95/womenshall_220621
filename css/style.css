@@ -70,11 +70,19 @@
 .desc_tbl.type_emph::before{color: #de5967}
 .section_directions .area_tbl .col1{width: 250px;min-width: 125px;box-sizing: border-box;}
 
+.list_tbl li{position: relative;padding-left: 12px;}
+.list_tbl li::before {position: absolute;left: 0;top:0;content: 'ㆍ';}
+
 
 .wrap_tab {overflow:hidden;position: relative;max-width:1200px;height: 57px;margin:0 auto;font-size: 0;border-radius:26.5px;background-color: #fff}
 .wrap_tab::before{position: absolute;left: 0;top: 0;right: 0;bottom: 0;border-radius:26.5px;border: 1px solid #e2e2e2;content: ''}
 .wrap_tab .link_tab{display: inline-block;position:relative;width: 50%;border-radius:26.5px;font-size:18px;line-height:57px;vertical-align: top;color:#333;text-align: center;font-weight: bold;}
 .wrap_tab .link_tab[aria-selected=true]{color:#fff;background-color:#84ce44}
+
+.wrap_subtab{padding:60px 0;text-align:center}
+.wrap_subtab .list_subtab li{display:inline-block;margin:0 18px;vertical-align:top}
+.wrap_subtab .link_tab{display:block;font-size:18px;line-height:26px;color:#999}
+.wrap_subtab .link_tab[aria-selected=true]{color:#333;font-weight:bold;border-bottom:2px solid #e34e64}
 
 .area_map .wrap_tab {margin-bottom: 53px}
 #map {position: relative;height: 575px}
@@ -152,21 +160,19 @@
 .cont_bdlist .list_doc .ico_excel{background-image:url(../img/sub/ico_excel.png)}
 .cont_bdlist .list_doc .tit_doc{display:inline-block;font-size:14px;color:#333;line-height:20px;font-weight:400;vertical-align:top}
 
+.cont_bdlist .list_short li{display:inline-block;margin-right:55px;font-size:14px;vertical-align:top}
+
 .cont_bn{position: relative;height: 290px;background-repeat: no-repeat;background-position: 0 0;background-size: 100%;}
 .cont_bn .link_site{position: absolute;right: 70px;bottom: 0;width: 122px;height: 122px;border-radius: 100%;font-size: 0;color: transparent}
 .cont_bn .img_g {display: none;}
+
+.box_notice{padding:42px 0;background-color:#f6f6f6;text-align:center}
+.box_notice .desc_notice{font-size:16px;line-height:28px;color:#333}
 
 /* 3. 수강신청 */
 .cont_enrol{margin-top: 30px;}
 .head_notice{display: flex;align-items: center;justify-content: center;position: relative;height: 111.5px;padding: 20px 210px;margin-top: 87px;text-align: center;border-radius:15px;background-color: #f2f8ea;}
 .head_notice .img_box{position: absolute;left: 58px;bottom: 0;}
-
-.cont_search {display: flex;width: 432px;height: 60px;margin: 58px auto 0}
-.cont_search .input_box{flex: 1;padding: 20px;border-radius: 5px;border: 1px solid #e2e2e2;background-color: #fff;}
-.cont_search .input_box .input {display: block;width: 100%;font-size: 16px;border: 0;}
-.cont_search .input_box .input::placeholder {color: #c3c3c3}
-.cont_search .input_box .input::-moz-placeholder {color: #c3c3c3}
-.cont_search .btn_search{flex: 0 0 60px;overflow: hidden;height: 60px;margin-left: 8px;border-radius: 5px;font-size: 0;color: transparent;background: url(../img/sub/ico_btn_search.png) no-repeat 50%;background-size: cover;}
 
 .cont_enrol .list_head{display: flex;align-items: center;justify-content: space-between;height: 52px; border-top: 2px solid #000;border-bottom: 1px solid #e2e2e2;box-sizing: border-box;}
 .cont_enrol .list_head li strong {display: block;font-size: 16px;font-weight: 500;color: #333;text-align: center;}
@@ -518,6 +524,12 @@
   .wrap_tab{height: 35.5px;border-radius: 17.75px;}
   .wrap_tab::before{border-radius: 17.75px;}
   .wrap_tab .link_tab {font-size: 13px;line-height: 35.5px;border-radius: 17.75px;}
+
+  .wrap_subtab{padding:30px 0 18px;text-align:left}
+  .wrap_subtab .list_subtab{overflow:hidden;overflow-x:scroll;font-size:0;white-space:nowrap}
+  .wrap_subtab .list_subtab li{margin:0}
+  .wrap_subtab .list_subtab li+li{margin-left: 15px;}
+  .wrap_subtab .link_tab{font-size:12px;line-height:26px}
   
   #map {height: 373px;}
   .area_map .txt_map{padding: 16px 0}
@@ -548,17 +560,19 @@
   .cont_bdlist .list_doc .link_doc{width:15px;height:16px}
   .cont_bdlist .list_doc .tit_doc{font-size:12px;line-height:16px}
 
+  .cont_bdlist .list_short li{display:block;margin-right:0;font-size:12px;line-height:18px;}
+  .cont_bdlist .list_short li+li{margin-top: 5px;}
+
   .cont_bn{height: auto;background: none !important;}
   .cont_bn .img_g {display: block;}
   .cont_bn .link_site {position: absolute;right: 7.3%;bottom: 0;width: 25.7%;height: 0;padding-top: 25.3%;}
 
+  .box_notice{padding:29px 0}
+  .box_notice .desc_notice{font-size:12px;line-height:18px}
 
   .head_notice {height: 89.5px;margin-top: 35px;padding: 30px 56px;border-radius: 7.5px;}
   .head_notice .img_box {display: none;}
-  .cont_search {width: 100%;height: 36px;margin-top: 25px}
-  .cont_search .btn_search{flex: 0 0 36px;height: 36px}
-  .cont_search .input_box{padding: 12px 12px;border-radius: 2.5px;}
-  .cont_search .input_box .input {font-size: 11px;}
+
   .cont_enrol{margin-top: 15px;}
 
   .cont_enrol .list_head {display: none;}
