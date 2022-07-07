@@ -33,6 +33,23 @@
 .area_attendance .select_box::after {position: absolute;top: 28px;right: 18px;z-index: 10;width: 10px;height: 5px;background: url(../img/sub/ico_select_arr.png) no-repeat 0 0;background-size: 100%;content: '';}
 .area_attendance .select_box .select {display: block;width: 100%;height: 100%;padding: 0 50px 0 23px;font-size: 16px;border: none;}
 
+.list_video {font-size: 0;margin-top: -32px;}
+.list_video li {display: inline-block;width: calc(50% - 10px);margin-right: 10px;margin-top: 32px;vertical-align: top;}
+.list_video li:nth-child(2), .list_video li:nth-child(4) {margin-right: 0;margin-left: 10px;}
+.list_video li .img_box {position: relative;}
+.list_video li .img_box::after {position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.3);content: '';}
+.list_video li .img_box .ico_play {position: absolute;left: 50%;top: 50%;z-index: 1;width: 38px;height: 52px;background: url(../img/sub/ico_play.png) no-repeat 0 0;background-size: cover;transform: translate(-50%, -50%);}
+.list_video .info_course {display: flex;align-items: center;justify-content: space-between;padding: 32px 0;border-bottom: 1px solid #e2e2e2;}
+.list_video .info_course strong {flex: 0 0 431px;overflow: hidden;font-size: 18px;font-weight: 500;line-height: 1;color: #333;white-space: nowrap;text-overflow: ellipsis;}
+.list_video .info_course span {font-size: 16px;font-family: 'Roboto', sans-serif;color: #999;line-height: 1;}
+
+.course_view {display: flex;padding: 40px 0;border-top: 2px solid #e34e64;border-bottom: 1px solid #e2e2e2;}
+.course_view .box_video {flex: 0 0 590px;position: relative;padding-top: 313px;}
+.course_view .box_video > * {position: absolute;left:0;top:0;width: 100%;height: 100%;}
+.course_view .box_info {flex: 1;padding: 30px 131px 0 48px;}
+.course_view .box_info .tit_txt {display: block;overflow: hidden;font-size: 18px;font-weight: 500;line-height: 1;color: #333;letter-spacing: -0.025em;white-space: nowrap;text-overflow: ellipsis;}
+.course_view .box_info .date {display: block;margin-top: 20px;font-size: 16px;color: #999;line-height: 1;}
+.course_view .box_info p {margin-top: 52px;font-size: 16px;line-height: 28px;color: #333;letter-spacing: -0.025em;white-space: pre-line;}
 
 /* responsive css */
 @media screen and (max-width: 1024px) {
@@ -63,4 +80,18 @@
   .area_attendance .select_box {height: 36px;}
   .area_attendance .select_box::after {top: 16px;right: 13px;width: 9px;height: 4.5px;}
   .area_attendance .select_box .select {font-size: 12px;padding: 0 40px 0 13px;}
+
+  .list_video li {width: calc(100% - 0px);margin-right: 0;margin-top: 20px;}
+  .list_video li:nth-child(2), .list_video li:nth-child(4) {margin-left: 0;}
+  .list_video .info_course {display: block;padding: 16px 0;}
+  .list_video .info_course strong {display: block;font-size: 12px;line-height: 18px;}
+  .list_video .info_course span {font-size: 11px;line-height: 18px;padding-top: 10px;}
+  .list_video li .img_box .ico_play {width: 19px;height: 26px;}
+
+  .course_view {display: block;padding: 15px 0 18px;}
+  .course_view .box_video {padding-top: 56.25%;}
+  .course_view .box_info {padding: 18px 0 0;}
+  .course_view .box_info .tit_txt {font-size: 12px;}
+  .course_view .box_info .date {margin-top: 12.5px;font-size: 11px;}
+  .course_view .box_info p {margin-top: 23px;font-size: 12px;line-height: 18px;}
 }
