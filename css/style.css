@@ -145,6 +145,9 @@
 .cont_bdlist li {font-size: 16px;line-height: 1.5;color: #333;}
 .cont_bdlist li.has_bullet {position: relative;padding-left: 12px;}
 .cont_bdlist li.has_bullet::before {position: absolute;left: 0;top:0;content: 'ㆍ';}
+.cont_bdlist li.has_note {position: relative;padding-left: 16px;font-size:14px;}
+.cont_bdlist li.has_note::before {position: absolute;left: 0;top:0;content: '※';}
+.cont_bdlist li.has_note+li.has_note{margin-top: 7px;}
 
 .cont_bdlist.has_input{position:relative}
 .cont_bdlist.has_input .wrap_input{position:absolute;right:32px;top:15px}
@@ -169,7 +172,7 @@
 .box_notice{padding:42px 0;background-color:#f6f6f6;text-align:center}
 .box_notice .desc_notice{font-size:16px;line-height:28px;color:#333}
 
-/* 3. 수강신청 */
+/* 3. 교육안내 */
 .cont_enrol{margin-top: 30px;}
 .head_notice{display: flex;align-items: center;justify-content: center;position: relative;height: 111.5px;padding: 20px 210px;margin-top: 87px;text-align: center;border-radius:15px;background-color: #f2f8ea;}
 .head_notice .img_box{position: absolute;left: 58px;bottom: 0;}
@@ -193,11 +196,11 @@
 .cont_enrol .col_enrol {flex: 0 1 137px;margin-right: 42px;}
 
 .wrap_pagenation {display: flex;align-items: center;justify-content: center;margin-top: 60px;}
-.wrap_pagenation .btn_comm {width: 44px;height: 44px;font-size:0;color: transparent;background-repeat: no-repeat;background-position: 0 0;background-size: cover;}
-.wrap_pagenation .btn_prev {margin-right: 36px;background-image: url(../img/sub/ico_list_prev.png);}
-.wrap_pagenation .btn_next {margin-left: 36px;background-image: url(../img/sub/ico_list_next.png);}
-.wrap_pagenation .txt_num {margin: 0 5px;width: 28px;line-height: 28px;font-size: 16px;font-weight: 500;color: #333;border-radius: 100%;text-align: center;cursor: pointer;}
-.wrap_pagenation .txt_num.on {color: #fff;background-color: #84ce44;}
+.wrap_pagenation .btn_comm {width: 30px;height: 30px;font-size:0;color: transparent;background-repeat: no-repeat;background-position: 0 0;background-size: cover;}
+.wrap_pagenation .btn_prev {margin-right: 10px;background-image: url(../img/sub/ico_list_prev.png);}
+.wrap_pagenation .btn_next {margin-left: 10px;background-image: url(../img/sub/ico_list_next.png);}
+.wrap_pagenation .txt_num {width: 30px;font-size: 14px;font-weight: 500;color: #333;text-align: center;cursor: pointer;}
+.wrap_pagenation .txt_num.on {font-weight:600;color:#e34e64;text-decoration:underline}
 
 .section_enrol_view .cont_tbl .tbl .col1,
 .section_enrol_view .cont_tbl .tbl .col3 {width: 146px;box-sizing: border-box;}
@@ -353,6 +356,58 @@
 .area_complete .tit_complete {margin-top: 25px;font-size: 30px;line-height: 1;color: #333;}
 .area_complete p {margin-top: 19px;font-size: 18px;line-height: 1;color: #333;}
 .area_complete .wrap_link {margin-top: 52px;}
+
+/* 수강신청 */
+.area_class{border-top:2px solid #e34e64}
+.area_class .tit_info{display:block;padding:20px 25px;font-size:20px;line-height:40px;color:#333}
+.list_class{border-top:1px solid #e2e2e2;font-size:0}
+.list_class li{display:inline-block;width:50%;border-bottom:1px solid #e2e2e2;border-right:1px solid #e2e2e2;font-size:0;color:#333;vertical-align:top;-webkit-box-sizing:border-box;box-sizing:border-box}
+.list_class li.type_wide{width:100%;border-right:0}
+.list_class li:nth-of-type(2n){border-right:0}
+.list_class .tit_list{display:inline-block;width:146px;padding:16px 20px;font-size:16px;line-height:24px;font-weight:500;vertical-align:top}
+.list_class .desc_list{display:inline-block;padding:16px 0;font-size:16px;line-height:28px;vertical-align:top}
+.list_class .desc_list.has_btn{padding:10px 0}
+.list_class .link_download{display:block;width:97px;height:40px;font-size:14px;line-height:40px;color:#fff;text-align:center;background-color:#000}
+.section_edu .wrap_btn{margin-top:60px;font-size:0;text-align:center}
+.section_edu .wrap_btn a{display:inline-block;width:144px;height:58px;margin:0 5px;font-size:16px;line-height:58px;font-weight:500;border:1px solid transparent;vertical-align:top}
+.section_edu .wrap_btn .link_apply{border-color:#e34e64;color:#fff;background-color:#e34e64}
+.section_edu .wrap_btn .link_list{border-color:#e8e8e8;color:#333}
+.area_teacher .cont_teacher:after{display:block;clear:both;content:''}
+.area_teacher .wrap_photo{overflow:hidden;float:left;width:185px;height:245px;margin-right:28px;background-color:#cbcbcb}
+.area_teacher .wrap_list{overflow:hidden;}
+.area_teacher .list_class,
+.area_confirm .list_class{border-top:2px solid #e34e64}
+
+.wrap_notice{margin-top:70px;padding:40px 0;background-color:#f6f6f6;}
+.wrap_notice .tit_notice{float:left;width:196px;font-size:22px;line-height:38px;color:#333;font-weight:500}
+.wrap_notice .ico_notice{display:inline-block;width:38px;height:38px;margin-right:10px;background:url(../img/sub/ico_notice.png) no-repeat center top / cover;vertical-align:top}
+.wrap_notice .txt_notice{overflow:hidden;padding-left:60px;border-left: 1px solid #e2e2e2}
+.wrap_notice .list_notice+.list_notice{margin-top: 20px;}
+.wrap_notice .list_notice li{font-size:16px;line-height:26px;}
+.wrap_notice .list_notice li+li{margin-top: 2px}
+.wrap_notice .list_notice.type_small{font-size: 0}
+.wrap_notice .list_notice.type_small li{display:inline-block;width:33.3333%;font-size:14px;line-height:2;color:#666;vertical-align:top}
+.wrap_notice .list_notice.type_small li+li{margin-top: 0}
+.section_class .cont_bdlist{margin-top: 50px;}
+.section_class .cont_search{margin-top: 30px;}
+.cont_search .input_box{position: relative;flex: 0 0 440px;height:100%;border: 1px solid #e2e2e2;background-color: #fff;}
+.cont_search .input_box .input {display: block;width: 100%;height: 100%;padding: 0 23px;border: none;font-size: 16px;color: #333;-webkit-box-sizing:border-box;box-sizing:border-box}
+.section_class .cont_flextable .list_head{padding-right: 24px;}
+.section_class .cont_flextable .list_body li{padding-right: 24px;}
+.section_class .cont_flextable .col_tit {flex: 0 1 360px;}
+.section_class .cont_flextable .col_day {flex: 0 1 140px;}
+.section_class .cont_flextable .col_time {flex: 0 1 140px;}
+.section_class .cont_flextable .col_fee {flex: 0 1 140px;}
+.section_class .cont_flextable .col_state {flex: 0 1 76px;}
+.section_class .cont_flextable .col_btn {flex: 0 1 110px;}
+.cont_flextable .col_btn a{display:block;width:97px;height:40px;font-size:14px;line-height:40px;font-weight:500;color:#fff;text-align:center}
+.cont_flextable .col_btn .btn_apply{background-color:#e34e64;}
+.cont_flextable .col_btn .btn_end{background-color:#424242;cursor:default}
+
+.section_class .cont_input{margin-top: 40px;padding-bottom:0;border-bottom:0}
+.section_class .cont_input .module_input .row_select{display:flex}
+.section_class .cont_input .module_input .row_select .type_select{width:auto;flex:1 0 auto}
+.section_class .cont_input .module_input .row_select .type_select + .type_select{border-left:0;}
 
 
 /* 알림마당 */
@@ -555,6 +610,8 @@
   .cont_bdlist.has_input .wrap_input{position:static;margin-top:10px}
   .cont_bdlist.has_input .label{font-size:12px;line-height:18px}
   .cont_bdlist.has_input .box_input{width:67px;height:20px}
+  .cont_bdlist li.has_note{font-size: 12px;}
+  .cont_bdlist li.has_note+li.has_note{margin-top: 5px;}
   .cont_bdlist .list_doc li{display:block}
   .cont_bdlist .list_doc li+li{margin-top:10px}
   .cont_bdlist .list_doc .link_doc{width:15px;height:16px}
@@ -710,6 +767,43 @@
   .area_complete .tit_complete {margin-top: 19.5px;font-size: 19px;}
   .area_complete p {margin-top: 14.5px;font-size: 12px;}
   .area_complete .wrap_link {margin-top: 27px;}
+
+  /* 수강신청 */
+  .area_class .tit_info{padding:20px 17px;font-size:14px;line-height:17px}
+  .list_class li{display:block;width:100%;border-right:0}
+  .list_class .tit_list{width:35%;padding:14px 17px;font-size:12px;line-height:17px;-webkit-box-sizing:border-box;box-sizing:border-box}
+  .list_class .desc_list{width:65%;padding:13px 0;font-size:12px;line-height:18px;-webkit-box-sizing:border-box;box-sizing:border-box}
+  .list_class .link_download{width:65px;height:27px;font-size:11px;line-height:27px}
+  .section_edu .wrap_btn{margin-top:35px}
+  .section_edu .wrap_btn a{ width:77px;height:36px;margin:0 3px;font-size:12px;line-height:36px;}
+  .area_teacher .wrap_photo{float:none;width:114px;height:150px;margin-right:0}
+  .area_teacher .wrap_list{margin-top:30px}
+
+  .wrap_notice{margin-top:30px;padding:25px 15px}
+  .wrap_notice .tit_notice{float:none;width:100%;font-size:16px;line-height:26px}
+  .wrap_notice .ico_notice{width:26px;height:26px;margin-right: 5px}
+  .wrap_notice .txt_notice{margin-top:20px;padding-left:0;border-left:0}
+  .wrap_notice .list_notice+.list_notice{margin-top:12px;}
+  .wrap_notice .list_notice li{font-size:12px;line-height:18px;}
+  .wrap_notice .list_notice li+li{margin-top: 5px}
+  .wrap_notice .list_notice.type_small li{display:block;width:100%;font-size:11px;line-height:22px}
+  .wrap_notice .list_notice.type_small li+li{margin-top: 0}
+
+  .section_class .cont_bdlist{margin-top: 25px;}
+  .section_class .cont_search{margin-top: 25px;}
+  .cont_search .input_box{flex:1}
+  .cont_search .input_box .input{padding:0 13px;font-size:12px;}
+  .section_class .cont_flextable .list_body .col_day,
+  .section_class .cont_flextable .list_body .col_time,
+  .section_class .cont_flextable .list_body .col_fee{display:inline-block;vertical-align:top}
+  .section_class .cont_flextable .list_body .col_day,
+  .section_class .cont_flextable .list_body .col_time{margin-right:8px;padding-right:8px;border-right:1px solid #e2e2e2}
+  .section_class .cont_flextable .list_body .col_state {display: none}
+  .cont_flextable .col_btn a{width:65px;height:26px;font-size:11px;line-height:26px}
+
+  .section_class .cont_input{margin-top: 20px;}
+  .section_class .cont_input .module_input .row_select{flex-wrap:wrap}
+  .section_class .cont_input .module_input .row_select .type_select + .type_select{margin-top:5px;border-left:1px solid #e2e2e2}
 
   .cont_notice{margin-top: 15px;}
   .cont_notice .list_head {display: none;}
