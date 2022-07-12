@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고양시 여성회관</title>
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../css/common.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+<body>
+  <!-- skip_nav -->
+  <div id="skip_nav">
+    <a href="#gnb">메뉴 바로가기</a>
+    <a href="#container">본문 바로가기</a>
+  </div>
+  <!-- //skip_nav -->
+  <div id="wrap">
+    <!-- header -->
+    <header class="header">
+      <script>
+        $(function(){ $('.header').load('../layout/header.html');});
+      </script>
+    </header>
+    <!-- // header -->
+    <!-- container -->
+    <div id="container" class="sub">
+      <div class="wrap_submenu">
+        <script>
+          $(function(){ $('.wrap_submenu').load('../layout/submenu.html');});
+        </script>
+      </div>
+      <h2 class="screen_out">고양시 여성회관</h2>
+      <section class="section_teacher">
+        <div class="section_inner">
+          <div class="wrap_subtit">
+            <h3>강사신청</h3>
+          </div>
+          <!-- 신청 default -->
+          <div class="area_input">
+            <div class="cont_input">
+                <div class="module_input">
+                    <label for="ip1" class="label">관련분야</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip1" class="input" value=""></span>
+                    </div>
+                </div>
+                <div class="module_input">
+                    <label for="ip2" class="label">성명</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip2" class="input" value=""></span>
+                    </div>
+                </div>
+                <div class="module_input">
+                    <label for="ip3" class="label">생년월일</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip3" class="input" value=""></span>
+                    </div>
+                </div>
+                <div class="module_input input_addr"> 
+                    <label for="ip4" class="label">주소</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip4" class="input"></span>
+                        <button type="button" class="btn_addr">찾기</button>
+                    </div>
+                </div>
+                <div class="module_input">
+                    <label for="ip5" class="label">학력</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip5" class="input" value=""></span>
+                    </div>
+                </div>
+                <div class="module_input">
+                    <label for="ip6" class="label">경력</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip6" class="input" value=""></span>
+                    </div>
+                </div>
+                <div class="module_input">
+                    <label for="ip7" class="label">자격증</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip7" class="input" value=""></span>
+                    </div>
+                </div>
+                <div class="module_input">
+                    <label for="ip8" class="label">강좌소개</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip8" class="input" value=""></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 첨부파일 -->
+            <div class="cont_input type_attach"> <!-- 첨부 작성일 경우 type_attach 클래스 추가 -->
+                <div class="module_input"> 
+                    <label for="ip9" class="label">강의계획서</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip9" class="input"></span>
+                        <span class="btn_attach">찾기<input type="file" class="input_file"></span>
+                    </div>
+                </div>
+                <div class="module_input"> 
+                    <label for="ip10" class="label">사진</label>
+                    <div class="wrap_input">
+                        <span class="box_input"><input type="text" id="ip10" class="input"></span>
+                        <span class="btn_attach">찾기<input type="file" class="input_file"></span>
+                    </div>
+                </div>
+                <div class="module_agree"> 
+                    <strong class="tit_agree">개인정보 수집·이용에<br class="type_pc">대한 동의</strong>
+                    <div class="wrap_agree">
+                        <div class="desc_radio">
+                            <p>
+                                ㆍ수집하는 개인정보 항목 : 상기 신청서에 기재한 개인정보에 한함.<br>
+                                ㆍ수집 및 이용목적 : 고양시 여성회관 채용 관련 진행 자료로 활용<br>
+                                ㆍ보유 및 이용기간 : 5년          
+                            </p>
+                            <ul>
+                                <li><input type="checkbox" id="agree" name="agree" class="radio"><label for="agree" class="label"><span class="ico_radio"></span>개인정보 수집 및 이용에 동의함</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="wrap_link">
+            <a href="#none" class="link_submit">확인</a>
+            <a href="#none" class="link_list">목록</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- // container -->
+    <!-- footer -->
+    <footer class="footer">
+      <script>
+        $(function(){ $('.footer').load('../layout/footer.html'); });
+      </script>
+    </footer>
+    <!-- // footer -->
+  </div>
+</body>
+</html>
