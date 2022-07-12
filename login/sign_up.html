@@ -28,11 +28,6 @@
     <!-- // header -->
     <!-- container -->
     <div id="container" class="sub">
-      <div class="wrap_submenu">
-        <script>
-          $(function(){ $('.wrap_submenu').load('../layout/submenu.html');});
-        </script>
-      </div>
       <h2 class="screen_out">로그인 본문</h2>
       <section class="section_login">
         <div class="section_inner">
@@ -41,6 +36,7 @@
           </div>
           <!-- 신청 default -->
           <div class="area_input">
+            <p class="desc_essential"><em>*</em> 필수 입력 항목입니다.</p>
             <div class="cont_input">
               <!-- 이름 -->
               <div class="module_input">
@@ -90,7 +86,9 @@
                       <option value="011">011</option>
                     </select>
                   </span>
+                  -
                   <span class="box_input"><input type="text" id="ip6-2" class="input"></span>
+                  -
                   <span class="box_input"><input type="text" id="ip6-3" class="input"></span>
                 </div>
               </div>
@@ -121,11 +119,11 @@
                 </div>
               </div>
             </div>
-            <!-- btn -->
-            <div class="wrap_btnterms">
-              <a href="#none" class="link_confirm">회원가입</a>
-              <a href="#none" class="link_cancle">취소</a>
-            </div>
+          </div>
+          <!-- btn -->
+          <div class="wrap_link">
+            <a href="#none" class="link_submit">회원가입</a>
+            <a href="#none" class="link_cancle">취소</a>
           </div>
         </div>
       </section>
