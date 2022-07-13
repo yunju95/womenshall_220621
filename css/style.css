@@ -476,6 +476,17 @@
 .list_faq .on .cont_answer{display:block}
 
 /* 홍보마당 */
+.section_gallery .cont_search .select_box{flex:0 0 158px;border-right:none}
+.cont_gallery{margin-top:25px}
+.cont_gallery .num_total{font-size:14px;color:#333;font-weight:500}
+.cont_gallery .num_total .emph_num{color:#e34e64}
+.list_gallery{display:flex;margin-top:10px;flex-wrap:wrap;justify-content:space-between}
+.list_gallery li{width:286px;margin-bottom:20px}
+.list_gallery .link_gallery{display:block}
+.list_gallery .wrap_img{position:relative;width:286px;padding-top:235px;background-color:#f6f6f6}
+.list_gallery .wrap_img .thumb_g{position:absolute;left:0;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.list_gallery .tit_gallery{display:block;overflow:hidden;height:30px;margin-top:10px;font-size:18px;color:#333;font-weight:500;line-height:30px;text-overflow:ellipsis;white-space:nowrap}
+.section_gallery .wrap_pagenation{margin-top:24px}
 
 /* 알림마당 */
 .cont_notice {margin-top: 30px;border-top: 2px solid #000;}
@@ -870,6 +881,19 @@
   .list_faq .list_tit:after{top:20px;right:12px;width:13px;height:7px}
   .list_faq .cont_answer{padding:11px 22px 11px 44px;font-size:12px;line-height:18px}
   .list_faq .cont_answer:before{top:12px;left:12px;width:25px;height:25px}
+
+  /* 홍보마당 */
+  .section_gallery .wrap_cont .cont_search{height:auto;margin-top:24px}
+  .section_gallery .cont_search .select_box{flex:100%;margin-bottom:8px;border-right:1px solid #e2e2e2}
+  .section_gallery .cont_search .select_box .select,
+  .section_gallery .cont_search .input_box .input{height:36px}
+  .cont_gallery{margin-top:15px}
+  .cont_gallery .num_total{font-size:11px}
+  .list_gallery{margin-top:8px}
+  .list_gallery li{width:100%;margin-bottom:10px}
+  .list_gallery .wrap_img{width:100%;padding-top:81%}
+  .list_gallery .tit_gallery{height:18px;font-size:12px;line-height:18px}
+  .section_gallery .wrap_pagenation{margin-top:16px}
 
   .cont_notice{margin-top: 15px;}
   .cont_notice .list_head {display: none;}
