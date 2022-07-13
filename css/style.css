@@ -464,6 +464,19 @@
 .section_job .input_part .desc_radio li:first-of-type{margin-left:0}
 .section_job .input_part .desc_radio .ico_radio{width:20px;height:20px}
 
+/* 참여마당 */
+.list_faq{border-top:2px solid #e34e64;border-bottom:1px solid #e2e2e2}
+.list_faq li+li{border-top:1px solid #e2e2e2}
+.list_faq .list_tit{display:block;position:relative;padding:16px 63px 14px 72px;font-size:18px;line-height:33px;color:#333;font-weight:500}
+.list_faq .list_tit:before{position:absolute;left:25px;top:16px;width:33px;height:33px;background:url(../img/sub/ico_faq_q.png) no-repeat center top / cover;content:''}
+.list_faq .list_tit:after{position:absolute;right:23px;top:28px;width:18px;height:9px;background:url(../img/sub/ico_faq_arrow.png) no-repeat center top / cover;content:''}
+.list_faq li.on .list_tit:after{transform:rotate(180deg)}
+.list_faq .cont_answer{display:none;position:relative;padding:30px 72px;border-top:1px solid #e2e2e2;font-size:16px;line-height:28px;color:#333}
+.list_faq .cont_answer:before{position:absolute;left:25px;top:33px;width:33px;height:33px;background:url(../img/sub/ico_faq_a.png) no-repeat center top / cover;content:''}
+.list_faq .on .cont_answer{display:block}
+
+/* 홍보마당 */
+
 /* 알림마당 */
 .cont_notice {margin-top: 30px;border-top: 2px solid #000;}
 .cont_notice .list_head{display: flex;align-items: center;justify-content: space-between;height: 52px; border-bottom: 1px solid #e2e2e2;box-sizing: border-box;}
@@ -850,6 +863,13 @@
   .section_job .input_part .desc_radio ul{margin-top:0;padding:0}
   .section_job .input_part .desc_radio .ico_radio{width:17px;height:17px}
   .section_job .cont_input .module_input .desc_radio .label{line-height:17px}
+
+  /* 참여마당 */
+  .list_faq .list_tit{overflow:hidden;padding:11px 35px 11px 44px;font-size:13px;line-height:25px;text-overflow:ellipsis;white-space:nowrap}
+  .list_faq .list_tit:before{top:12px;left:12px;width:25px;height:25px}
+  .list_faq .list_tit:after{top:20px;right:12px;width:13px;height:7px}
+  .list_faq .cont_answer{padding:11px 22px 11px 44px;font-size:12px;line-height:18px}
+  .list_faq .cont_answer:before{top:12px;left:12px;width:25px;height:25px}
 
   .cont_notice{margin-top: 15px;}
   .cont_notice .list_head {display: none;}
