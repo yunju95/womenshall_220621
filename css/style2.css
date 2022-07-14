@@ -1,6 +1,25 @@
 /* global */
 .tr {text-align: right;}
 
+/* 1. 소개 */
+.head_history {position: relative;}
+.head_history::before {position: absolute;left: 0;right: 0;top: 14px;bottom: 0;z-index: -1;background-color: #f9f1f1;content: '';}
+.head_history .section_inner {display: flex;align-items: center;max-width: 1384px;}
+.head_history .img_box {flex: 0 0 663px;}
+.head_history .txt_box {flex:  0 0 772px;padding-left: 80px;}
+.head_history .txt_box strong {display: block;font-family: 'Noto Sans', sans-serif;font-size: 40px;line-height: 54px;font-weight: 300;color: #e34e64;}
+.head_history .txt_box strong em {font-weight: 500;}
+.head_history .txt_box p {margin-top: 38px;font-size: 16px;line-height: 1.7;color: #333;letter-spacing: -0.025em;}
+.cont_history {margin-top: 126px;}
+.cont_history .box_history {display: flex;justify-content: center;}
+.cont_history .box_history + .box_history {margin-top: 105px;}
+.cont_history .box_history .txt_year {flex: 0 0 571px;padding-right: 64px;font-size: 60px;line-height:1;color: #333;text-align: right;font-family: 'Open Sans bold', sans-serif;}
+.cont_history .box_history dl {flex: 0 0 630px;position: relative;margin-top: 13px;padding-left: 68px;border-left: 1px solid #e2e2e2;}
+.cont_history .box_history dl::after {position: absolute;left: 0;top: 0;width: 18px;height: 18px;border-radius: 100%;background-color:#fff;border: 4px solid #e34e64;box-sizing: border-box;transform: translateX(-50%);content: '';}
+.cont_history .box_history dt {font-size: 20px;font-family: 'Open Sans semibold', sans-serif;color: #333;line-height: 30px;}
+.cont_history .box_history dd + dt {margin-top: 35px;}
+.cont_history .box_history dd {margin-top: 7px;font-size: 16px;line-height: 25px;color: #333;letter-spacing: -0.025em;}
+
 /* 8. 마이페이지 */
 .cont_flextable{margin-top: 26px;}
 
@@ -116,7 +135,6 @@
 .list_signupintro .box_item p em {font-weight: 500;}
 .list_signupintro .box_item .link_sign {display: block;margin-top: auto;line-height: 60px;text-align: center;font-size: 16px;font-weight:600;color: #fff;background-color: #e34e64;}
 
-
 .sub .section_login .area_input {max-width: 751px;margin: 116px auto 0;border-top: 2px solid #e34e64;}
 .section_login .area_input .desc_essential {top: -36px;font-size: 16px;}
 .section_login .cont_input {padding: 30px 0;}
@@ -134,10 +152,30 @@
 .section_login .cont_input .module_input .wrap_input .box_input.type_select {flex: 0 0 161px;}
 .section_login .cont_input .module_input .input_email .box_input.type_select {margin-left: 10px;}
 
+.cont_memeber {max-width:479px;padding-top: 38px;margin:50px auto 0;border-top: 3px solid #e34e64;text-align: center;}
+.cont_memeber strong {display: block;font-size: 26px;line-height:1;color:#333;letter-spacing: -0.025em;}
+.cont_memeber p {margin-top: 24px;font-size: 16px;line-height: 1;color: #333;}
+.cont_memeber .link_member {display: block;margin-top: 66px;line-height: 60px;font-size: 16px;font-weight: 500;letter-spacing:-0.025em;color: #fff;background-color: #e34e64;}
 
 
 /* responsive css */
 @media screen and (max-width: 1024px) {
+  .head_history {padding: 60px 0;}
+  .head_history::before {top:0;}
+  .head_history .img_box {display: none;}
+  .head_history .txt_box {flex: 100%;padding: 0 12.5px;}
+  .head_history .txt_box strong {font-size: 20px;line-height: 27px;}
+  .head_history .txt_box p {margin-top: 18px;font-size: 14px;line-height: 1.5;}
+  .cont_history {margin-top: 45px;}
+  .cont_history .box_history + .box_history {margin-top: 49px;}
+  .cont_history .box_history .txt_year {flex: 50%;font-size: 24px;padding-right: 0;text-align: left;}
+  .cont_history .box_history dl {flex:50%;margin-top: 2px;padding-left: 17px;}
+  .cont_history .box_history dl::after {width: 12px;height: 12px;border: 2px solid #e34e64;}
+  .cont_history .box_history dt {font-size: 13px;line-height: 20px;}
+  .cont_history .box_history dd {margin-top: 1px;font-size: 12px;line-height: 18px;}
+  .cont_history .box_history dd + dt {margin-top: 12px;}
+    
+
   .cont_search {flex-wrap: wrap;width: 100%;height: 36px;margin-top: 35px;}
   .cont_search .btn_search {flex: 0 0 77.5px;margin-left: 7px;font-size: 12px;line-height: 36px;}
   .cont_search .select_box {flex: 1;}
@@ -237,6 +275,10 @@
   .section_login .cont_input .module_input .wrap_input .box_input.type_select {flex: 0 0 99px;margin-left: 6px;}
   .section_login .cont_input .module_input .link_search {width: 100px;font-size: 12px;}
   .section_login .cont_input .module_input .input_addr .box_input:first-child {margin-right: 106.5px;}
-
   .sub .section_login .area_input {margin-top: 56.5px;}
+
+  .cont_memeber {padding-top: 28px;margin: 25px auto 0;border-top: 2px solid #e34e64;}
+  .cont_memeber strong {font-size: 19px;}
+  .cont_memeber p {margin-top: 18px;font-size: 12px;}
+  .cont_memeber .link_member {margin-top: 30px;line-height: 36px;font-size: 12px;}
 }
