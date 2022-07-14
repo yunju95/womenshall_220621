@@ -33,44 +33,88 @@
           $(function(){ $('.wrap_submenu').load('../layout/submenu.html');});
         </script>
       </div>
-      <h2 class="screen_out">고양생태환경교육센터</h2>
+      <h2 class="screen_out">여성회관 소개</h2>
       <section class="section_directions">
         <div class="section_inner">
           <div class="wrap_subtit">
             <h3>오시는 길</h3>
           </div>
           <div class="area_map">
-            <div class="wrap_tab" role="tablist">
-              <a href="#none" class="link_tab" aria-selected="true">고양생태교육센터</a> <!-- 활성화시 aria-selected=true / 기본 false -->
-              <a href="#none" class="link_tab" aria-selected="false">호수자연학습센터</a>
-            </div>
             <div id="map" style="background-color: #efefef">
               <!-- 지도 스크립트 들어가는 영역 / 코드 삽입 후 배경값 삭제 -->
             </div>
-            <div class="txt_map">
-              <strong>주소</strong>
-              <p>경기도 고양시 일산서구 대화로 315 (대화동)</p>
+            <div class="box_mapinfo">
+              <dl class="txt_map">
+                <dt>주소</dt>
+                <dd>10528 경기도 고양시 덕양구 용현로 48 (행신동 774)</dd>
+              </dl>
+              <dl class="txt_map">
+                <dt>전화번호</dt>
+                <dd>고양시 민원 콜센터 031-909-9000<br>여성회관   031 - 8075 - 4621~6 / FAX : 031 - 938 - 4307</dd>
+              </dl>
             </div>
           </div>
+
           <div class="area_tbl">
             <div class="wrap_contit">
-              <strong>교통안내</strong>
+              <strong>이용노선 별 하차장소 교통 안내</strong>
+              <p class="desc">
+                <span class="dot dot_orange"></span>하행(출발지 <-> 종점)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="dot dot_green"></span>하행(출발지 <-> 종점)
+              </p>
             </div>
             <div class="cont_tbl">
               <div class="tbl_outer">
-                <table class="tbl tl">
+                <table class="tbl">
                   <colgroup>
                     <col>
                     <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
                   </colgroup>
-                  <tbody>
+                  <thead>
                     <tr>
-                      <th class="col1">버스</th>
-                      <td>88A, 059, 058 농수산물센터(20083) - 도보 3분 / 090, 10, 55, 56, 66, 70, 80, 150, 600, 900 농수산물센터(36-261, 20091) - 도보 6분</td>
+                      <th rowspan="2">층별</th>
+                      <th rowspan="2">버스번호 (출발지 ↔ 종점)</th>
+                      <th colspan="4">하차장소</th>
                     </tr>
                     <tr>
-                      <th class="col1">지하철</th>
-                      <td>3호선 대화역 4번 출구 버스 환승, 농수산물센터 하차</td>
+                      <th>행신역•신촌방향</th>
+                      <th>화정역방향</th>
+                      <th>영등포ㆍ송정역방향</th>
+                      <th>대화역방향</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan="4">원당 / 화정 방면</th>
+                      <td>일반 11 (성석동 ↔ 행신역)</td>
+                      <td><span class="dot dot_orange"></span>무원마을 단독주택단지</td>
+                      <td><span class="dot dot_green"></span>무원마을 단독주택단지</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>일반 850 (고양동 ↔ 행신역)</td>
+                      <td><span class="dot dot_orange"></span>무원마을 단독주택단지</td>
+                      <td><span class="dot dot_green"></span>무원마을 단독주택단지</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>일반 82 (내유동 ↔ 신촌)</td>
+                      <td><span class="dot dot_orange"></span>무원고교</td>
+                      <td><span class="dot dot_green"></span>무원고교</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>직행 1082 (내유동 ↔ 영등포)</td>
+                      <td><span class="dot dot_green"></span>무원고교</td>
+                      <td><span class="dot dot_orange"></span>무원고교</td>
+                      <td>무원고교</td>
+                      <td></td>
                     </tr>
                   </tbody>
                 </table>
@@ -79,27 +123,30 @@
           </div>
           <div class="area_tbl">
             <div class="wrap_contit">
-              <strong>주차장 이용 안내</strong>
+              <strong>버스노선 안내</strong>
             </div>
             <div class="cont_tbl">
               <div class="tbl_outer">
-                <table class="tbl tl">
+                <table class="tbl">
                   <colgroup>
                     <col>
                     <col>
+                    <col>
                   </colgroup>
+                  <thead>
+                    <th>방향</th>
+                    <th>버스번호 (출발지↔종점)</th>
+                    <th>층별세부공간</th>
+                  </thead>
                   <tbody>
                     <tr>
-                      <th class="col1">지하주차장</th>
-                      <td>32면 (장애인 주차구역 2면 포함)</td>
+                      <th rowspan="2">원당/화정 방면</th>
+                      <td>일반 11 (성석동 ↔ 행신역)</td>
+                      <td>성석동 – 신원당아파트 - 덕양구청 – 롯데마트 – 샘터마을2단지 – <em class="emph_txt">무원마을 단독주택단지</em></td>
                     </tr>
                     <tr>
-                      <th class="col1">장애인주차면</th>
-                      <td>월 ~ 일요일 09:00 ~ 18:00</td>
-                    </tr>
-                    <tr>
-                      <th class="col1">주차요금</th>
-                      <td>무료</td>
+                      <td>일반 850 (고양동 ↔ 행신역)</td>
+                      <td> 고양동삼거리 – 고양경찰서 – 샘터마을 3단지 – 샘터마을 2단지 – <em class="emph_txt">무원마을 단독주택단지</em></td>
                     </tr>
                   </tbody>
                 </table>
