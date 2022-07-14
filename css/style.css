@@ -73,6 +73,8 @@
 .cont_tbl.no_line .tbl td{border:none}
 .cont_tbl.no_line .tbl tr{border-bottom:1px solid #e2e2e2}
 
+.cont_tbl .tbl_inside th{background-color:#f7f7f7}
+
 .list_tbl li{position: relative;padding-left: 12px;}
 .list_tbl li::before {position: absolute;left: 0;top:0;content: 'ㆍ';}
 
@@ -121,7 +123,7 @@
 
 .section_hall .cont_input:first-of-type,
 .section_teacher .cont_input:first-of-type{padding-bottom:0;border-bottom: 0}
-.section_hall .cont_input .module_input .box_input.box_wide{width:100%}
+.cont_input .module_input .box_input.box_wide{width:100%}
 .section_hall .cont_input.type_attach .module_input .box_input{width:538px}
 .section_hall .cont_input .module_input .input_tel{align-items:center}
 .section_hall .box_txt{display:inline-block;margin-right:10px;font-size:16px;color:#333;vertical-align:top}
@@ -394,6 +396,7 @@
 .wrap_notice .list_notice.type_small{font-size: 0}
 .wrap_notice .list_notice.type_small li{display:inline-block;width:33.3333%;font-size:14px;line-height:2;color:#666;vertical-align:top}
 .wrap_notice .list_notice.type_small li+li{margin-top: 0}
+
 .section_class .cont_bdlist{margin-top: 50px;}
 .section_class .cont_search{margin-top: 30px;}
 .cont_search .input_box{position: relative;flex: 0 0 440px;height:100%;border: 1px solid #e2e2e2;background-color: #fff;}
@@ -437,8 +440,53 @@
 .section_teacher .wrap_agree .desc_radio li{margin-left:0}
 .section_teacher .wrap_agree .desc_radio .ico_radio{width:20px;height:20px;margin-top:3px}
 
+.section_class_intro .cont_tbl b{font-weight:600}
+.section_class_intro .cont_tbl .tbl th{padding-left:25px;padding-right:25px}
+.section_class_intro .cont_tbl .tbl td:last-child{padding-left:10px;padding-right:10px}
 
 
+/* 취업상담 */
+.section_job .wrap_notice .list_notice li+li{margin-top:14px}
+.section_job .wrap_cont .cont_search{margin-top:50px}
+.section_job .cont_search .select_box{flex:0 0 158px;border-right:none}
+.section_job .cont_flextable .col_num{flex:0 1 130px}
+.section_job .cont_flextable .col_ctg{flex:0 1 115px}
+.section_job .cont_flextable .col_tit{flex:0 1 670px}
+.section_job .cont_flextable .col_answer{flex:0 1 155px}
+.section_job .cont_flextable .col_date{flex:0 1 130px}
+.section_job .cont_flextable .list_body .col_tit{padding-left:100px;text-align:left}
+.section_job .cont_flextable .list_body .col_tit.has_lock:after{display:inline-block;width:16px;height:21px;margin-left:6px;background:url(../img/sub/icon_lock.png) no-repeat center top / cover;vertical-align:top;content:''}
+.section_job .area_view .cont_view{border-color:#e34e64}
+.section_job .area_view .cont_view .head_view .txt_info{display:inline-block;margin-right:25px;border-right:1px solid #e2e2e2;vertical-align:top}
+.section_job .area_view .cont_view .body_view.type_answer{background-color:#f6f6f6}
+.section_job .wrap_cont .area_input{margin-top:50px;border-top:2px solid #e34e64}
+.section_job .input_part .desc_radio ul{padding:18px 0 17px}
+.section_job .input_part .desc_radio li:first-of-type{margin-left:0}
+.section_job .input_part .desc_radio .ico_radio{width:20px;height:20px}
+
+/* 참여마당 */
+.list_faq{border-top:2px solid #e34e64;border-bottom:1px solid #e2e2e2}
+.list_faq li+li{border-top:1px solid #e2e2e2}
+.list_faq .list_tit{display:block;position:relative;padding:16px 63px 14px 72px;font-size:18px;line-height:33px;color:#333;font-weight:500}
+.list_faq .list_tit:before{position:absolute;left:25px;top:16px;width:33px;height:33px;background:url(../img/sub/ico_faq_q.png) no-repeat center top / cover;content:''}
+.list_faq .list_tit:after{position:absolute;right:23px;top:28px;width:18px;height:9px;background:url(../img/sub/ico_faq_arrow.png) no-repeat center top / cover;content:''}
+.list_faq li.on .list_tit:after{transform:rotate(180deg)}
+.list_faq .cont_answer{display:none;position:relative;padding:30px 72px;border-top:1px solid #e2e2e2;font-size:16px;line-height:28px;color:#333}
+.list_faq .cont_answer:before{position:absolute;left:25px;top:33px;width:33px;height:33px;background:url(../img/sub/ico_faq_a.png) no-repeat center top / cover;content:''}
+.list_faq .on .cont_answer{display:block}
+
+/* 홍보마당 */
+.section_gallery .cont_search .select_box{flex:0 0 158px;border-right:none}
+.cont_gallery{margin-top:25px}
+.cont_gallery .num_total{font-size:14px;color:#333;font-weight:500}
+.cont_gallery .num_total .emph_num{color:#e34e64}
+.list_gallery{display:flex;margin-top:10px;flex-wrap:wrap;justify-content:space-between}
+.list_gallery li{width:286px;margin-bottom:20px}
+.list_gallery .link_gallery{display:block}
+.list_gallery .wrap_img{position:relative;width:286px;padding-top:235px;background-color:#f6f6f6}
+.list_gallery .wrap_img .thumb_g{position:absolute;left:0;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.list_gallery .tit_gallery{display:block;overflow:hidden;height:30px;margin-top:10px;font-size:18px;color:#333;font-weight:500;line-height:30px;text-overflow:ellipsis;white-space:nowrap}
+.section_gallery .wrap_pagenation{margin-top:24px}
 
 /* 알림마당 */
 .cont_notice {margin-top: 30px;border-top: 2px solid #000;}
@@ -768,7 +816,7 @@
   .wrap_notice .list_notice li{font-size:12px;line-height:18px;}
   .wrap_notice .list_notice li+li{margin-top: 5px}
   .wrap_notice .list_notice.type_small li{display:block;width:100%;font-size:11px;line-height:22px}
-  .wrap_notice .list_notice.type_small li+li{margin-top: 0}
+  .wrap_notice .list_notice.type_small li+li{margin-top:0}
 
   .section_class .cont_bdlist{margin-top: 25px;}
   .section_class .cont_search{margin-top: 25px;}
@@ -806,6 +854,46 @@
   .section_teacher .wrap_agree .desc_radio ul{margin-top:7px}
   .section_teacher .wrap_agree .desc_radio .label{font-size:12px;line-height:17px}
   .section_teacher .wrap_agree .desc_radio .ico_radio{width:17px;height:17px;margin-top:0}
+
+  /* 취업상담 */
+  .section_job .wrap_notice .list_notice li+li{margin-top:7px}
+  .section_job .wrap_cont .cont_search{height:auto;margin-top:24px}
+  .section_job .cont_search .select_box{flex:100%;margin-bottom:8px;border-right:1px solid #e2e2e2}
+  .section_job .cont_search .select_box .select,
+  .section_job .cont_search .input_box .input{height:36px}
+  .section_job .cont_flextable .list_body .col_num{display:none}
+  .section_job .cont_flextable .list_body .col_num + .col_ctg{margin-top:0}
+  .section_job .cont_flextable .list_body .col_tit{padding-left:0}
+  .section_job .cont_flextable .list_body .col_tit.has_lock:after{width:12px;height:16px;margin-left:12px}
+  .section_job .cont_flextable .list_body .col_answer,
+  .section_job .cont_flextable .list_body .col_date{display:inline-block;vertical-align:top}
+  .section_job .cont_flextable .list_body .col_answer{margin-right:8px;padding-right:8px;border-right:1px solid #e2e2e2}
+  .section_job .area_view .cont_view .head_view .txt_info{margin-right:10px;}
+  .section_job .wrap_link [class^=link_]{width:77px}
+  .section_job .wrap_cont .area_input{margin-top:25px}
+  .section_job .input_part .desc_radio ul{margin-top:0;padding:0}
+  .section_job .input_part .desc_radio .ico_radio{width:17px;height:17px}
+  .section_job .cont_input .module_input .desc_radio .label{line-height:17px}
+
+  /* 참여마당 */
+  .list_faq .list_tit{overflow:hidden;padding:11px 35px 11px 44px;font-size:13px;line-height:25px;text-overflow:ellipsis;white-space:nowrap}
+  .list_faq .list_tit:before{top:12px;left:12px;width:25px;height:25px}
+  .list_faq .list_tit:after{top:20px;right:12px;width:13px;height:7px}
+  .list_faq .cont_answer{padding:11px 22px 11px 44px;font-size:12px;line-height:18px}
+  .list_faq .cont_answer:before{top:12px;left:12px;width:25px;height:25px}
+
+  /* 홍보마당 */
+  .section_gallery .wrap_cont .cont_search{height:auto;margin-top:24px}
+  .section_gallery .cont_search .select_box{flex:100%;margin-bottom:8px;border-right:1px solid #e2e2e2}
+  .section_gallery .cont_search .select_box .select,
+  .section_gallery .cont_search .input_box .input{height:36px}
+  .cont_gallery{margin-top:15px}
+  .cont_gallery .num_total{font-size:11px}
+  .list_gallery{margin-top:8px}
+  .list_gallery li{width:100%;margin-bottom:10px}
+  .list_gallery .wrap_img{width:100%;padding-top:81%}
+  .list_gallery .tit_gallery{height:18px;font-size:12px;line-height:18px}
+  .section_gallery .wrap_pagenation{margin-top:16px}
 
   .cont_notice{margin-top: 15px;}
   .cont_notice .list_head {display: none;}

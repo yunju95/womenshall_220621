@@ -219,6 +219,7 @@
   .course_view .box_info p {margin-top: 23px;font-size: 12px;line-height: 18px;}
 
   .cont_input .module_input.type_aligntop .label {margin-top: 0;}
+  .cont_input .module_input .box_input.box_small {width: 100%;}
   .cont_input .module_input .box_textarea {height: 218px;}
   .cont_input .module_input .box_textarea .textarea {padding: 10px 11.5px;font-size: 11px;}
 
