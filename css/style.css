@@ -142,11 +142,20 @@
 .section_hall .input_equipment .desc_radio li:first-of-type{margin-left:0}
 .section_hall .cont_input .input_equipment .desc_radio .label{font-size:16px;line-height:25px}
 .section_hall .cont_input .input_equipment .box_xsmall{display:inline-block;width:62px;height:30px;margin-right:5px;vertical-align:top}
+.section_hall .cont_input .input_equipment .box_input .input{padding:0 10px 0 15px} /* 2022-07-26 추가 */
 
 .section_hall_complate .area_box{max-width:480px;margin:0 auto;padding-top:30px;border-top:3px solid #e34e64;color:#333;text-align:center}
 .section_hall_complate .tit_box{display:block;font-size:26px;}
 .section_hall_complate .desc_box{margin-top:15px;font-size:16px}
 .section_hall_complate .wrap_link .link_complate{width:100%;border-color:#e34e64;color:#fff;background-color:#e34e64}
+
+/* 2022-07-26 추가 시작 */
+.wrap_subtab{margin:70px 0 60px;text-align:center}
+.list_subtab{font-size:0}
+.list_subtab li{display:inline-block;margin:0 18px;vertical-align:top}
+.list_subtab .link_tab{display:block;border-bottom:2px solid transparent;font-size:18px;line-height:25px;color:#999}
+.list_subtab .link_tab[aria-selected='true']{color:#333;font-weight:bold;border-color:#e34e64}
+/* 2022-07-26 추가 끝 */
 
 
 /* 2. 교육안내 */
@@ -453,7 +462,9 @@
 
 .section_class_intro .cont_tbl b{font-weight:600}
 .section_class_intro .cont_tbl .tbl th{padding-left:25px;padding-right:25px}
-.section_class_intro .cont_tbl .tbl td:last-child{padding-left:10px;padding-right:10px}
+.section_class_intro .cont_tbl .tbl td{padding-right:10px} /* 2022-07-26 추가 */
+.section_class_intro .cont_tbl .tbl td:last-child{padding-left:10px} /* 2022-07-26 수정 */
+.section_class_intro .cont_tbl .tbl_inside td{padding-left:10px} /* 2022-07-26 추가 */
 
 
 /* 취업상담 */
@@ -466,7 +477,7 @@
 .section_job .cont_flextable .col_answer{flex:0 1 155px}
 .section_job .cont_flextable .col_date{flex:0 1 130px}
 .section_job .cont_flextable .list_body .col_tit{padding-left:100px;text-align:left}
-.section_job .cont_flextable .list_body .col_tit.has_lock:after{display:inline-block;width:16px;height:21px;margin-left:6px;background:url(../img/sub/icon_lock.png) no-repeat center top / cover;vertical-align:top;content:''}
+.section_job .cont_flextable .list_body .col_tit.has_lock:before{display:inline-block;width:16px;height:21px;margin-right:6px;background:url(../img/sub/icon_lock.png) no-repeat center top / cover;vertical-align:top;content:''} /* 2022-07-26 수정 */
 .section_job .area_view .cont_view{border-color:#e34e64}
 .section_job .area_view .cont_view .head_view .txt_info{display:inline-block;margin-right:25px;border-right:1px solid #e2e2e2;vertical-align:top}
 .section_job .area_view .cont_view .body_view.type_answer{background-color:#f6f6f6}
@@ -732,11 +743,13 @@
   .wrap_tab::before{border-radius: 17.75px;}
   .wrap_tab .link_tab {font-size: 13px;line-height: 35.5px;border-radius: 17.75px;}
 
-  .wrap_subtab{padding:30px 0 18px;text-align:left}
-  .wrap_subtab .list_subtab{overflow:hidden;overflow-x:scroll;font-size:0;white-space:nowrap}
+  /* 2022-07-26 수정 시작 */
+  .wrap_subtab{overflow:hidden;overflow-x:scroll;margin:30px 0 18px;text-align:left}
+  .wrap_subtab .list_subtab{margin-bottom:-20px;padding-bottom:20px;font-size:0;white-space:nowrap}
   .wrap_subtab .list_subtab li{margin:0}
   .wrap_subtab .list_subtab li+li{margin-left: 15px;}
   .wrap_subtab .link_tab{font-size:12px;line-height:26px}
+  /* // 2022-07-26 수정 끝 */
   
   .head_history {padding: 60px 0;}
   .head_history::before {top:0;}
@@ -1015,7 +1028,7 @@
   .section_job .cont_flextable .list_body .col_num{display:none}
   .section_job .cont_flextable .list_body .col_num + .col_ctg{margin-top:0}
   .section_job .cont_flextable .list_body .col_tit{padding-left:0}
-  .section_job .cont_flextable .list_body .col_tit.has_lock:after{width:12px;height:16px;margin-left:12px}
+  .section_job .cont_flextable .list_body .col_tit.has_lock:before{width:12px;height:16px;margin-right:6px} /* 2022-07-26 수정 */
   .section_job .cont_flextable .list_body .col_answer,
   .section_job .cont_flextable .list_body .col_date{display:inline-block;vertical-align:top}
   .section_job .cont_flextable .list_body .col_answer{margin-right:8px;padding-right:8px;border-right:1px solid #e2e2e2}
