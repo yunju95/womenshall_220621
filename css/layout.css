@@ -69,7 +69,7 @@
 .top_footermenu .list_menu li{display: inline-block;position:relative;vertical-align: top;}
 .top_footermenu .list_menu li + li::before{display:inline-block;margin-top: 7px;width: 2px;height: 2px;background-color: #fff;content: ''}
 .top_footermenu .list_menu .link_menu{display: inline-block;padding:0 10px;font-size: 16px;line-height: 1;color: #fff;font-weight: 400;vertical-align: top;}
-.footer_inner .footer_info {margin-top: 25px;font-family: NotoSans-Regular,'Noto Sans KR', sans-serif;font-size: 14px;line-height: 26px;color: #b3b3b3;font-weight: 300;}
+.footer_inner .footer_info {margin-top: 25px;font-family: 'Noto Sans KR', sans-serif;font-size: 14px;line-height: 26px;color: #b3b3b3;font-weight: 300;}
 
 
 /* submenu */
