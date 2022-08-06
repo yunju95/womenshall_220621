@@ -1,3 +1,11 @@
+/* Noto Sans KR */
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+/* open sans */
+@import url('https://fonts.cdnfonts.com/css/open-sans');
+/* roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 /* noto-sans-kr-100 - latin */
 @font-face {
   font-family: 'Noto Sans KR';
