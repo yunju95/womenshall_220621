@@ -75,8 +75,9 @@ $(function(){
     }
   });
 
+  /* 2022-08-09 popup */
   // sub popoup
-  $('.list_comm.type_gallery .link_list, .section_enrol_view .wrap_link .link_submit').click(function(e){
+  $('.cont_flextable .col_btn .btn_apply, .section_edu .wrap_btn .link_apply').click(function(e){
     e.preventDefault();
     $('.wrap_subpopup').css('display', 'flex');
   });
@@ -84,6 +85,7 @@ $(function(){
     e.preventDefault();
     $('.wrap_subpopup').hide();
   });
+  /* // 2022-08-09 popup */
   
   // module remove
   $('.area_input .btn_remove').click(function(){
