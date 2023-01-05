@@ -23,9 +23,9 @@
 
 
 /* gnb */
-.wrap_gnb{position:relative;height:91px;padding:0 40px;background: #fff;text-align: center;font-size:0}
+.wrap_gnb{position:relative;height:91px;padding:0 40px;background: #fff;text-align: center;font-size:0;border-bottom: 1px solid #e2e2e2;}/* 2023-01-05 수정 */
 .wrap_gnb .logo{position:absolute;left:40px;top:27px}
-.wrap_gnb .logo .link_logo{display:block;width:228px;height:38px;background:url(../img/common/logo.png) no-repeat 0 0;background-size: 100% auto}
+.wrap_gnb .logo .link_logo{display:block;width:256px;height:32px;background:url(../img/common/logo.png) no-repeat 0 0;background-size: 100% auto}/* 2023-01-05 수정 */
 .wrap_gnblist{display: inline-block;position:relative} 
 .wrap_gnblist .list_menu{font-size:0;text-align: center}
 .wrap_gnblist .list_menu > li{display: inline-block;padding:0 31px;vertical-align: top;}
@@ -39,9 +39,9 @@
 .wrap_gnblist .list_menudep2 .link_menu{display: block;}
 .wrap_gnblist .list_menudep2 .txt_menu{display:inline-block;position:relative;padding-right:14px;margin:5px 0;font-size:14px;line-height:18px;color: #333}
 .wrap_gnblist .list_menudep2  li:hover .txt_menu{color:#e34e64}
-.wrap_gnb .btn_allmenu{display:block;position: absolute;right:37px;top:24px;width:23px;padding:10px 3px;box-sizing: unset}
-.wrap_gnb .btn_allmenu span[class^=bar_]{display: block;height:2px;background-color:#3b302f}
-.wrap_gnb .btn_allmenu .bar_bottom{margin-top:5px}
+.wrap_gnb .btn_allmenu{display:block;position: absolute;right:37px;top:24px;width:23px;}/* 2023-01-05 수정 */
+.wrap_gnb .btn_allmenu span[class^=bar_]{display: block;height:2px;margin:5px 0;background-color:#3b302f}/* 2023-01-05 수정 */
+/* .wrap_gnb .btn_allmenu .bar_bottom{margin-top:5px} 2023-01-05 삭제 */
 
 
 /* allmenu */
@@ -119,10 +119,11 @@
   /* gnb */
   .wrap_gnb{height: 45px;padding: 0 15px}
   .wrap_gnb .logo{left: 15px;top: 13px;}
-  .wrap_gnb .logo .link_logo{width: 149.5px;height: 19px;}
+  .wrap_gnb .logo .link_logo{width: 149px;height: 17px;}/* 2023-01-05 수정 */
   .wrap_gnblist{display: none;}
-  .wrap_gnb .btn_allmenu{right: 10px;top: 5.5px;width: 20px;padding: 11px 5px;}
-  .wrap_gnb .btn_allmenu .bar_bottom{margin-top: 4.5px;}
+  .wrap_gnb .btn_allmenu{right: 10px;top: 10px;width: 20px;}/* 2023-01-05 수정 */
+  .wrap_gnb .btn_allmenu span[class^=bar_]{margin:4px 0;}/* 2023-01-05 추가 */
+  /* .wrap_gnb .btn_allmenu .bar_bottom{margin-top: 4.5px;} 2023-01-05 삭제 */ 
   
   /* site menu */
   .cont_allmenu{overflow: visible;display: block;position: absolute;right:0;top:0;width: 71%;height: 100%;margin: 0;border-radius: 0;}

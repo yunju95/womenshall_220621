@@ -43,29 +43,89 @@
         <div class="wrap_mv">
           <div class="slide_mv">
             <div class="swiper-wrapper">
-              <div class="swiper-slide slide1" style="background-image: url(img/main/mainVisual1.png)"><span class="screen_out">슬라이드1</span></div>
-              <div class="swiper-slide slide2" style="background-image: url(img/main/mainVisual2.png)"><span class="screen_out">슬라이드2</span></div>
+              <!-- 2023-01-05 백그라운드 이미지 > 이미지 태그 구조 변경 시작 -->
+              <div class="swiper-slide slide1"><img src="img/main/mainVisual1.png" alt="" class="thumb_g"><span class="screen_out">슬라이드1</span></div>
+              <div class="swiper-slide slide2"><img src="img/main/mainVisual2.png" alt="" class="thumb_g"><span class="screen_out">슬라이드2</span></div>
+              <div class="swiper-slide slide3"><img src="img/main/mainVisual3.png" alt="" class="thumb_g"><span class="screen_out">슬라이드3</span></div><!-- 2023-01-05 슬라이드3 구조 추가 -->
+              <!-- // 2023-01-05 백그라운드 이미지 > 이미지 태그 구조 변경 끝 -->
               <div class="wrap_arrow">
                 <div class="swiper-button-prev">이전</div>
                 <div class="swiper-button-next">다음</div>
               </div>
             </div>
-            <div class="area_controller">
+            <!-- <div class="area_controller">
               <div class="wrap_progress">
                 <span class="num_page page_active"></span>
                 <span class="num_page page_all">02</span>
               </div>
-              
-            </div>
+            </div> 2023-01-05 삭제 -->
           </div>
-          <div class="area_mvtxt">
+          <!-- <div class="area_mvtxt">
             <span>지금 시작하세요. 새롭게 시작하세요.</span>
             <strong>새로운 자신을 찾아가는 <em>고양특례시 여성회관</em></strong>
-          </div>
+          </div> 2023-01-05 삭제 -->
         </div>
       </section>
+      <!-- 2023-01-05 추가 시작 -->
+      <section class="section_shortcut">
+        <span class="screen_out">바로가기 메뉴</span>
+        <ul class="list_shortcut">
+          <li>
+            <a href="#none" class="link_shortcut">
+              <span class="box_img"><img src="img/main/ico_shortcut01.png" alt="" class="img_g"></span>
+              <span class="txt_shortcut">수강신청</span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_shortcut">
+              <span class="box_img"><img src="img/main/ico_shortcut02.png" alt="" class="img_g"></span>
+              <span class="txt_shortcut">일자리 정보</span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_shortcut">
+              <span class="box_img"><img src="img/main/ico_shortcut03.png" alt="" class="img_g"></span>
+              <span class="txt_shortcut">오시는 길</span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_shortcut">
+              <span class="box_img"><img src="img/main/ico_shortcut04.png" alt="" class="img_g"></span>
+              <span class="txt_shortcut">묻고 답하기</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- // 2023-01-05 추가 끝 -->
       <section class="section_notice">
         <div class="inner_section">
+          <!-- 2023-01-05 팝업존, 공지사항 순서 변경 -->
+          <div class="wrap_mainpopup">
+            <!-- <div class="wrap_tit">
+              <h2 class="">팝업존</h2>
+              <a href="#none" class="link_more">View more</a>
+            </div> 2023-01-05 삭제 -->
+            <div class="slide_popup">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide1">
+                  <a href="#none" class="link_item">
+                    <img src="img/main/thumb_popup.png" alt="" class="thumb_g">
+                  </a>
+                </div>
+                <div class="swiper-slide slide2">
+                  <a href="#none" class="link_item">
+                    <img src="img/main/thumb_popup.png" alt="" class="thumb_g">
+                  </a>
+                </div>
+                <div class="swiper-slide slide3">
+                  <a href="#none" class="link_item">
+                    <img src="img/main/thumb_popup.png" alt="" class="thumb_g">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
           <div class="wrap_mainnotice">
             <div class="wrap_tit">
               <h2 class="">공지사항</h2>
@@ -97,32 +157,6 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="wrap_mainpopup">
-            <div class="wrap_tit">
-              <h2 class="">팝업존</h2>
-              <a href="#none" class="link_more">View more</a>
-            </div>
-            <div class="slide_popup">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide slide1">
-                  <a href="#none" class="link_item">
-                    <img src="img/main/thumb_popup.png" alt="" class="thumb_g">
-                  </a>
-                </div>
-                <div class="swiper-slide slide2">
-                  <a href="#none" class="link_item">
-                    <img src="img/main/thumb_popup.png" alt="" class="thumb_g">
-                  </a>
-                </div>
-                <div class="swiper-slide slide3">
-                  <a href="#none" class="link_item">
-                    <img src="img/main/thumb_popup.png" alt="" class="thumb_g">
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
           </div>
         </div>
       </section>
@@ -159,7 +193,10 @@
                       자격증 2급</strong>
                     </div>
                     <div class="box_info">
-                      <span class="count">10 / 3 (1)</span>
+                      <div class="box_txt"><!-- 2023-01-05 구조 추가 / 하위 구조 동일 적용 -->
+                        <span class="txt_info">정원 / 등록완료</span><!-- 2023-01-05 구조 추가 -->
+                        <span class="count">10 / <em class="emph_num">15</em><!-- 2023-01-05 컬러값 추가를 위한 텍스트 수정 및 추가 / 하위 구조 동일 적용 --></span>
+                      </div>
                       <button type="button" class="btn_application">신청</button>
                     </div>
                   </div>
@@ -172,7 +209,10 @@
                       자격증 2급 가나다라마바사 아자차카타파하</strong>
                     </div>
                     <div class="box_info">
-                      <span class="count">10 / 3 (1)</span>
+                      <div class="box_txt">
+                        <span class="txt_info">정원 / 등록완료</span>
+                        <span class="count">10 / <em class="emph_num">15</em></span>
+                      </div>
                       <button type="button" class="btn_application">신청</button>
                     </div>
                   </div>
@@ -185,7 +225,10 @@
                       자격증 2급</strong>
                     </div>
                     <div class="box_info">
-                      <span class="count">10 / 3 (1)</span>
+                      <div class="box_txt">
+                        <span class="txt_info">정원 / 등록완료</span>
+                        <span class="count">10 / <em class="emph_num">15</em></span>
+                      </div>
                       <button type="button" class="btn_application" disabled>예정</button> <!-- 비활성화 케이스일 경우 disabled 속성 추가 -->
                     </div>
                   </div>
@@ -198,7 +241,10 @@
                       자격증 2급</strong>
                     </div>
                     <div class="box_info">
-                      <span class="count">10 / 3 (1)</span>
+                      <div class="box_txt">
+                        <span class="txt_info">정원 / 등록완료</span>
+                        <span class="count">10 / <em class="emph_num">15</em></span>
+                      </div>
                       <button type="button" class="btn_application type_dead">마감</button> <!-- 마감케이스일 경우 type_dead 클래스 추가 -->
                     </div>
                   </div>
@@ -211,7 +257,10 @@
                       자격증 2급</strong>
                     </div>
                     <div class="box_info">
-                      <span class="count">10 / 3 (1)</span>
+                      <div class="box_txt">
+                        <span class="txt_info">정원 / 등록완료</span>
+                        <span class="count">10 / <em class="emph_num">15</em></span>
+                      </div>
                       <button type="button" class="btn_application type_dead">마감</button> <!-- 마감케이스일 경우 type_dead 클래스 추가 -->
                     </div>
                   </div>
@@ -224,7 +273,10 @@
                       자격증 2급</strong>
                     </div>
                     <div class="box_info">
-                      <span class="count">10 / 3 (1)</span>
+                      <div class="box_txt">
+                        <span class="txt_info">정원 / 등록완료</span>
+                        <span class="count">10 / <em class="emph_num">15</em></span>
+                      </div>
                       <button type="button" class="btn_application type_dead">마감</button> <!-- 마감케이스일 경우 type_dead 클래스 추가 -->
                     </div>
                   </div>
