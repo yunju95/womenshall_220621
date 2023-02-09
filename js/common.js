@@ -14,7 +14,6 @@ $(function(){
       breakpoints: {
         1024: {
           spaceBetween: 20,
-          
         },
       },
   });
