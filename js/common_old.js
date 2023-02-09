@@ -3,20 +3,34 @@ $(function(){
   // main visual slider
   const autoplay = 5000;
   const swiperMv = new Swiper('.slide_mv', {
-      spaceBetween: 10,
+      // effect: 'fade', 2023-01-05 삭제
+      spaceBetween: 10, // 2023-01-05 추가
       loop: true,
-      slidesPerView: "auto",
-      centeredSlides: true,
+      /* navigation: {
+        nextEl: ".slide_mv .swiper-button-next",
+        prevEl: ".slide_mv .swiper-button-prev",
+        clickable: true,
+      }, 2023-01-05 삭제 */
       autoplay: {
         delay: 5000,
         disableOnInteraction: false,
       },
+      /* 2023-01-05 추가 시작 */
       breakpoints: {
         1024: {
           spaceBetween: 20,
-          
         },
       },
+      /* // 2023-01-05 추가 끝 */
+      /*
+        pagination: {
+          el: ".page_active",
+          clickable: false,
+          renderBullet: function (index, className) {
+              return '<span class="' + className + '">' + '0' + (index + 1) + "<span class='outer_progress'><em class='progress'></em></span></span>";
+          },
+      },
+      2023-01-05 삭제 */
   });
   /* 2022-06-23 수정 끝 */
   // main top banner

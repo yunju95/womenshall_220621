@@ -5,10 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>고양시 여성회관</title>
-  <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+  <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"/> 2023-02-09 삭제-->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.css" rel="stylesheet"><!-- 2023-02-09 스와이퍼 css 9.0.3 버전 추가 -->
   <link rel="stylesheet" href="css/common.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
+  <!-- <script src="js/swiper-bundle.min.js"></script> 2023-02-09 삭제 -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script><!-- 2023-02-09 스와이퍼 js 9.0.3 버전 추가 -->
   <script src="js/common.js"></script>
 </head>
 <body>
@@ -47,11 +49,16 @@
               <div class="swiper-slide slide1"><img src="img/main/mainVisual1.png" alt="" class="thumb_g"><span class="screen_out">슬라이드1</span></div>
               <div class="swiper-slide slide2"><img src="img/main/mainVisual2.png" alt="" class="thumb_g"><span class="screen_out">슬라이드2</span></div>
               <div class="swiper-slide slide3"><img src="img/main/mainVisual3.png" alt="" class="thumb_g"><span class="screen_out">슬라이드3</span></div><!-- 2023-01-05 슬라이드3 구조 추가 -->
+              <!-- 2023-02-09 슬라이더 아이템이 4개 이하일 때 전체 슬라이더 아이템 한번 더 반복 필요  -->
+              <div class="swiper-slide slide1"><img src="img/main/mainVisual1.png" alt="" class="thumb_g"><span class="screen_out">슬라이드1</span></div>
+              <div class="swiper-slide slide2"><img src="img/main/mainVisual2.png" alt="" class="thumb_g"><span class="screen_out">슬라이드2</span></div>
+              <div class="swiper-slide slide3"><img src="img/main/mainVisual3.png" alt="" class="thumb_g"><span class="screen_out">슬라이드3</span></div>
+              <!-- // 2023-02-09 슬라이더 아이템이 4개 이하일 때 전체 슬라이더 아이템 한번 더 반복 필요  -->
               <!-- // 2023-01-05 백그라운드 이미지 > 이미지 태그 구조 변경 끝 -->
-              <div class="wrap_arrow">
+              <!-- <div class="wrap_arrow">
                 <div class="swiper-button-prev">이전</div>
                 <div class="swiper-button-next">다음</div>
-              </div>
+              </div> 2023-02-09 삭제 -->
             </div>
             <!-- <div class="area_controller">
               <div class="wrap_progress">
